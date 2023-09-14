@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="hideout  ">
+        <nav class="visible" id="navbar">
+            <div class="left">
+                <a href="index.html">
+                    <img src="logo.png" alt="no image">
+                </a>
+            </div>
+            <div class="right h-nav-resp"> <!-- Apply h-nav-resp class here -->
+                <ul class="navlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="#main-content" id="contact-link">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <footer class="main-content" id="contact">
+            <div class="flex">
+                <p id="msg">Get in touch with me on </p>
+                <div class="first">
+                    <a href="https://www.instagram.com/beshubham8/"  target="_blank">
+                    <img src="instagram.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com/shubham54679001" target="_blank">
+                    <img src="twitter.png" alt="twitter">
+                </a>
+                <a href="mailto:shubham.com321@gmail.com">
+                    <img src="gmail.png" alt="gmail">
+                </a>
+                </div>
+            </div>
+            <div class="secondfoot">
+                <p>&copy; 2023 Shubham All rights Reserved</p>
+            </div>
+        </footer>
+        <main>
+            
+            <section class="firstsection">
+                <div class="leftsection">
+                    Hi,My name is <span class="purple">Shubham Sharma</span> .
+                    <div class="font"> from Kathmandu,Nepal and</div>
+                    <div class="font">I am a passionate</div>
+                    <span id="element"></span>
+
+                </div>
+                <div class="rightsection">
+                    <img src="pngwing.com.png" alt="image">
+                </div>
+            </section>
+           
+
+            <section class="aboutclass" id="about">
+                <h2>About Me</h2>
+                <br>
+                <p>I'm currently honing my skills in HTML, CSS, and JavaScript to craft engaging online experiences. I
+                    love tackling challenges and turning ideas into reality.</p>
+
+                <p> I'm excited to share my journey with you and explore new opportunities in web development.</p>
+
+                <p>Thanks for visiting, and feel free to reach out to me for collaborations or questions!</p>
+            </section>
+            <div class="thisme" id="photome">
+                <img src="original.png" alt="photome">
+            </div>
+            <section class="logos">
+
+                <img src="pngwing.com (1).png" alt="photo">
+            </section>
+        </main>
+
+        </section>
+    </div>
+    
+    <section class="infinite">
+        <div class="container">
+            <div class="circle">
+                <span style="--i:0"></span>
+                <span style="--i:1"></span>
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+                <span style="--i:4"></span>
+                <span style="--i:5"></span>
+                <span style="--i:6"></span>
+                <span style="--i:7"></span>
+                <span style="--i:8"></span>
+                <span style="--i:9"></span>
+                <span style="--i:10"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:13"></span>
+                <span style="--i:14"></span>
+                <span style="--i:15"></span>
+                <span style="--i:16"></span>
+                <span style="--i:17"></span>
+                <span style="--i:18"></span>
+                <span style="--i:19"></span>
+                <span style="--i:20"></span>
+            </div>
+            <div class="circle">
+                <span style="--i:0"></span>
+                <span style="--i:1"></span>
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+                <span style="--i:4"></span>
+                <span style="--i:5"></span>
+                <span style="--i:6"></span>
+                <span style="--i:7"></span>
+                <span style="--i:8"></span>
+                <span style="--i:9"></span>
+                <span style="--i:10"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:13"></span>
+                <span style="--i:14"></span>
+                <span style="--i:15"></span>
+                <span style="--i:16"></span>
+                <span style="--i:17"></span>
+                <span style="--i:18"></span>
+                <span style="--i:19"></span>
+                <span style="--i:20"></span>
+
+            </div>
+        </div>
+        </div>
+        <div class="loading-message">
+            <p>DOING BETTER</p>
+            <!-- <p id="soon">Soon.......</p> -->
+        </div>
+    </section>
+
+    <script >
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('#navbar');
+    const navLinks = navbar.querySelectorAll('a'); // Select all navigation links
+
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('active'); // Toggle the 'active' class on the navbar
+        burger.classList.toggle('active'); // Toggle the 'active' class on the burger icon
+    });
+
+    // Add click event listeners to each navigation link
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active'); // Remove the 'active' class to hide the navbar
+            burger.classList.remove('active'); // Remove the 'active' class from the burger icon
+        });
+    });
+
+    // After setting up the event listeners, show the burger icon
+    burger.style.display = 'block';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $(document).ready(function () {
+
+            $('.hideout').hide();
+
+            setTimeout(function () {
+                $('.container').fadeOut(function () {
+                    $('.hideout').fadeIn();
+                });
+            }, 1600);
+        });
+        try {
+            document.addEventListener("DOMContentLoaded", function () {
+                const preloader = document.querySelector(".container");
+                const message = document.querySelector(".loading-message");
+
+
+                function hideMessage() {
+                    message.style.display = "none";
+                }
+
+
+                function showMessage() {
+                    message.style.display = "block";
+                }
+                preloader.addEventListener("animationiteration", hideMessage);
+
+                showMessage();
+            });
+        } catch (console) {
+            console.log('try reloading the website');
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Developer', 'Video Editor'],
+            typeSpeed: 70,
+            loop: true,
+        });
+        // Function to scroll to the target element
+        function scrollToTarget(targetElement, duration) {
+            const targetPosition = targetElement.offsetTop;
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            let startTime = null;
+
+            function scrollAnimation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const scrollProgress = Math.min(timeElapsed / duration, 1);
+                window.scrollTo(0, startPosition + distance * scrollProgress);
+
+                if (scrollProgress < 1) {
+                    requestAnimationFrame(scrollAnimation);
+                }
+            }
+
+            requestAnimationFrame(scrollAnimation);
+        }
+
+        // Smooth scrolling when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Adjust the duration (in milliseconds) for slower or faster scrolling
+                    const duration = 1000; // 1000 milliseconds = 1 second
+                    scrollToTarget(targetElement, duration);
+                }
+            });
+        });
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactLink = document.getElementById("contact-link");
+            const contactSection = document.getElementById("contact");
+
+            // Variable to track if the contact section is currently visible
+            let contactSectionVisible = false;
+
+            function scrollToContactSection() {
+                contactSection.style.display = "block";
+                contactSection.scrollIntoView({ behavior: "smooth" });
+                contactSectionVisible = true;
+            }
+
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+                contactSectionVisible = false;
+            }
+
+            contactLink.addEventListener("click", function (e) {
+                e.preventDefault();
+                if (contactSectionVisible) {
+                    scrollToTop();
+                } else {
+                    scrollToContactSection();
+                }
+            });
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
