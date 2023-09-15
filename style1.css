@@ -839,7 +839,7 @@ top: 15px;
         margin: -14px 12px; /* Adjust the margin */
     }
 
-    /* Add any other adjustments you need for screens up to 900px width */
+    
 }
 
 @media screen and (max-width: 2736px) {
@@ -900,36 +900,33 @@ top: 15px;
     /* Add additional CSS rules specific to Surface Pro 7 here */
 }
 @media screen and (max-width: 280px) {
-    /* Add your specific CSS rules for the Galaxy Fold here */
-    /* Modify styles as needed for the Galaxy Fold's unique screen size */
-
-    /* Example: */
+    
     #navbar.active {
-        height: 10vh; /* Adjust the height for Galaxy Fold */
+        height: 10vh;
     }
 
     nav ul li a:hover {
-        font-size: 0.8rem; /* Adjust font size for smaller screens */
-        color: #FF5733; /* Change the color on hover */
+        font-size: 0.8rem; 
+        color: #FF5733; 
     }
 
     .line {
-        width: 20px; /* Make the line narrower */
+        width: 20px; 
     }
 
     footer.main-content {
-        padding: 5px; /* Reduce padding */
+        padding: 5px; 
     }
 
     footer.main-content .flex img {
-        height: 20px; /* Adjust image height */
-        width: 20px; /* Adjust image width */
-        margin: 5px 6px; /* Adjust image margins */
+        height: 20px; 
+        width: 20px; 
+        margin: 5px 6px; 
     }
 
     main img {
-        margin: 50px 0; /* Reduce image margin */
-        border-radius: 15px; /* Adjust border radius */
+        margin: 50px 0; 
+        border-radius: 15px; 
     }
 
     #photome img {

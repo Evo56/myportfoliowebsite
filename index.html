@@ -19,7 +19,7 @@
                     <img src="logo.png" alt="no image">
                 </a>
             </div>
-            <div class="right h-nav-resp"> <!-- Apply h-nav-resp class here -->
+            <div class="right h-nav-resp"> 
                 <ul class="navlist">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -154,22 +154,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const navbar = document.querySelector('#navbar');
-    const navLinks = navbar.querySelectorAll('a'); // Select all navigation links
+    const navLinks = navbar.querySelectorAll('a'); 
 
     burger.addEventListener('click', () => {
-        navbar.classList.toggle('active'); // Toggle the 'active' class on the navbar
-        burger.classList.toggle('active'); // Toggle the 'active' class on the burger icon
+        navbar.classList.toggle('active'); 
+        burger.classList.toggle('active');
     });
 
-    // Add click event listeners to each navigation link
+    
     navLinks.forEach((link) => {
         link.addEventListener('click', () => {
-            navbar.classList.remove('active'); // Remove the 'active' class to hide the navbar
-            burger.classList.remove('active'); // Remove the 'active' class from the burger icon
+            navbar.classList.remove('active');
+            burger.classList.remove('active'); 
         });
     });
 
-    // After setting up the event listeners, show the burger icon
+    
     burger.style.display = 'block';
 });
 
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             typeSpeed: 70,
             loop: true,
         });
-        // Function to scroll to the target element
+        
         function scrollToTarget(targetElement, duration) {
             const targetPosition = targetElement.offsetTop;
             const startPosition = window.scrollY;
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(scrollAnimation);
         }
 
-        // Smooth scrolling when clicking on navigation links
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -254,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const targetElement = document.getElementById(targetId);
 
                 if (targetElement) {
-                    // Adjust the duration (in milliseconds) for slower or faster scrolling
                     const duration = 1000; // 1000 milliseconds = 1 second
                     scrollToTarget(targetElement, duration);
                 }
@@ -268,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const contactLink = document.getElementById("contact-link");
             const contactSection = document.getElementById("contact");
 
-            // Variable to track if the contact section is currently visible
+            
             let contactSectionVisible = false;
 
             function scrollToContactSection() {
