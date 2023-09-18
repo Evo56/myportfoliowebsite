@@ -305,6 +305,11 @@ nav {
 .main-content #msg {
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
+    color: #00ADB5;
+    font-family: 'Noto Serif', serif;
+}
+.secondfoot p{
+ color:#EEEEEE;
 }
 
 .main-content .flex {
@@ -333,17 +338,7 @@ nav {
    border-radius: 15px;
 }
 
-.main-content .secondfoot {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    text-align: center;
-    /* Center the text within the div */
-    height: 20px;
-    margin: 20px 23px;
-}
+
 
     .aboutclass {
        margin-top: 250px;
