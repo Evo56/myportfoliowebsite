@@ -303,7 +303,6 @@ nav {
 }
 
 .main-content #msg {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     color: #00ADB5;
     font-family: 'Noto Serif', serif;
@@ -815,9 +814,9 @@ top: 15px;
     }
 
     main img {
-        width: 171px; /* Adjust the image width */
+        width: 135px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 37px -6px; 
+        margin: -11px 1px; 
         
     }
     .font{
