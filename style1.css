@@ -662,7 +662,12 @@ top: 15px;
 /* Media query for Galaxy Fold */
 @media screen and (max-width: 560px) {
     /* Adjustments for Galaxy Fold or similar devices */
-
+    .leftsection {
+        font-size: 1.2rem;
+        color: #EEEEEE;
+        font-family: 'Mooli', sans-serif;
+        margin: 222px -24px;
+    }
     nav {
         height: 20px; /* Reduce the height of the navigation bar */
     }
