@@ -927,3 +927,72 @@ top: 15px;
     }
 }
 
+@media only screen and (max-width: 767px)
+{ 
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; /* Adjust the logo size for Nest Hub */
+        width: auto; /* Maintain aspect ratio */
+    }
+    .line {
+        width: 30px; /* Adjust the width of the burger menu lines */
+    }
+
+    footer.main-content {
+        padding: 10px; /* Reduce the padding */
+    }
+
+    footer.main-content .flex img {
+        height: 28px; /* Reduce the image height */
+        width: 28px; /* Reduce the image width */
+        margin: 10px 12px; /* Adjust vertical and horizontal margins */
+    }
+
+    main img {
+        width: 135px; /* Adjust the image width */
+        max-width: 400px; /* Set a maximum width to avoid stretching */
+        margin: -11px 1px; 
+        
+    }
+    .font{
+        font-size: 15px;
+    }
+    .purple{
+        font-size: 20px;
+    }
+
+    #photome img {
+        width: 150px; /* Adjust the image width */
+        max-width: 400px; /* Set a maximum width to avoid stretching */
+        margin: 150px 30px; /* Remove the border radius on smaller screens */
+    }
+
+    #about h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 450px; /* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 180px; /* Adjust the image width */
+        height: 58px; /* Adjust the image height */
+        margin: -14px 12px; /* Adjust the margin */
+    }
+    .leftsection {
+        font-size: 1.2rem;
+        color: #EEEEEE;
+        font-family: 'Mooli', sans-serif;
+        margin: 222px -24px;
+    }
+    
+}
