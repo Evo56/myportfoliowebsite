@@ -967,7 +967,7 @@ top: 15px;
     #photome img {
         width: 150px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 116px 30px; /* Remove the border radius on smaller screens */
+        margin: 180px 30px; /* Remove the border radius on smaller screens */
     }
 
     #about h2 {
@@ -984,9 +984,9 @@ top: 15px;
     }
 
     .logos img {
-        width: 180px; /* Adjust the image width */
-        height: 58px; /* Adjust the image height */
-        margin: -14px 12px; /* Adjust the margin */
+        width: 112px;
+        height: 39px;
+        margin: -9px 12px;
     }
     .leftsection {
         font-size: 1.2rem;
