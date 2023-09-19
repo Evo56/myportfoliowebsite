@@ -834,7 +834,7 @@ top: 15px;
     #photome img {
         width: 200px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 114px 30px; /* Remove the border radius on smaller screens */
+        margin: 148px 30px; /* Remove the border radius on smaller screens */
     }
 
     #about h2 {
