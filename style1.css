@@ -660,7 +660,7 @@ top: 15px;
 /* Your existing styles here */
 
 /* Media query for Galaxy Fold */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     /* Adjustments for Galaxy Fold or similar devices */
     .leftsection {
         font-size: 1.2rem;
@@ -834,7 +834,7 @@ top: 15px;
     #photome img {
         width: 200px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 148px 30px; /* Remove the border radius on smaller screens */
+        margin: 114px 30px; /* Remove the border radius on smaller screens */
     }
 
     #about h2 {
@@ -927,7 +927,7 @@ top: 15px;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 390px)
 { 
     nav ul li a:hover {
         font-size: 1rem; /* Adjust font size for screens up to 900px width */
@@ -946,8 +946,8 @@ top: 15px;
     }
 
     footer.main-content .flex img {
-        height: 28px; /* Reduce the image height */
-        width: 28px; /* Reduce the image width */
+        height: 18px; /* Reduce the image height */
+        width: 20px; /* Reduce the image width */
         margin: 10px 12px; /* Adjust vertical and horizontal margins */
     }
 
@@ -967,7 +967,7 @@ top: 15px;
     #photome img {
         width: 150px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 190px 30px; /* Remove the border radius on smaller screens */
+        margin: 116px 30px; /* Remove the border radius on smaller screens */
     }
 
     #about h2 {
