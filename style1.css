@@ -939,28 +939,27 @@ top: 15px;
         color: #00ADB5;
     }
     nav img {
-        height: 20px; /* Adjust the logo size for Nest Hub */
-        width: auto; /* Maintain aspect ratio */
+        height: 20px; 
+        width: auto; 
     }
     .line {
-        width: 30px; /* Adjust the width of the burger menu lines */
+        width: 30px; 
     }
 
     footer.main-content {
-        padding: 10px; /* Reduce the padding */
+        padding: 10px; 
     }
 
     footer.main-content .flex img {
-        height: 18px; /* Reduce the image height */
-        width: 20px; /* Reduce the image width */
-        margin: 10px 12px; /* Adjust vertical and horizontal margins */
+        height: 18px; 
+        width: 20px;
+        margin: 10px 12px; 
     }
 
     main img {
-        width: 135px; /* Adjust the image width */
-        max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: -15px 1px; 
-        
+        width: 100px;
+        max-width: 400px;
+        margin: -15px 1px;
     }
     .font{
         font-size: 15px;
