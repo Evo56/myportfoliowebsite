@@ -353,7 +353,7 @@ nav {
         font-size: 40px;
         font-family: 'Noto Serif', serif;
         color: #00ADB5;
-        margin-top: 12px;
+        margin-top: 336px;
     }
     #about p{
         font-size: 25px;
@@ -638,7 +638,7 @@ top: 15px;
     }
 
     .aboutclass {
-        margin-top: 100px; /* Adjust the margin-top for the about section */
+        margin-top: -258px; /* Adjust the margin-top for the about section */
     }
 
     #photome img {
@@ -844,7 +844,7 @@ top: 15px;
 
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 174px; /* Adjust margin-top for smaller screens */
+        margin-top: 455px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
