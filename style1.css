@@ -136,7 +136,7 @@ main{
 
     body {
         background: #222831;
-        color: #EEEEEE;
+        color: #E1E8ED;
         font-family: 'Poppins', sans-serif;
        margin:0px;
        padding:0px;
@@ -177,7 +177,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #EEEEEE;
+    color: #E1E8ED;
 }
 
 nav ul li a:hover {
@@ -225,7 +225,7 @@ nav {
     
     .leftsection {
         font-size: 2.5rem;
-        color: #EEEEEE;
+        color:#E1E8ED;
         font-family: 'Mooli', sans-serif;
     }
     
@@ -313,7 +313,7 @@ nav {
     font-family: 'Noto Serif', serif;
 }
 .secondfoot p{
- color:#EEEEEE;
+ color:#E1E8ED;
 }
 
 .main-content .flex {
@@ -434,7 +434,7 @@ top: 15px;
     
         #navbar ul li {
             margin: 10px 0;
-            color: #EEEEEE;
+            color: #E1E8ED;
         }
     
         #navbar img {
@@ -467,7 +467,7 @@ top: 15px;
         /* Add styles for the footer */
         footer.main-content {
             background-color: #222831;
-            color: #EEEEEE;
+            color: #E1E8ED;
             padding: 20px;
             text-align: center;
         }
@@ -524,7 +524,7 @@ top: 15px;
         }
         .leftsection {
             font-size: 2rem;
-            color: #EEEEEE;
+            color: #E1E8ED;
             font-family: 'Noto Serif', serif;
         }
     }
@@ -669,7 +669,7 @@ top: 15px;
     /* Adjustments for Galaxy Fold or similar devices */
     .leftsection {
         font-size: 1.2rem;
-        color: #EEEEEE;
+        color:#E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 222px -24px;
     }
@@ -862,7 +862,7 @@ top: 15px;
     }
     .leftsection {
         font-size: 1.2rem;
-        color: #EEEEEE;
+        color:#E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 222px -24px;
     }
@@ -877,7 +877,7 @@ top: 15px;
 
     nav ul li a:hover {
         font-size: 0.8rem; 
-        color: #FF5733; 
+        color: #00ADB5;
     }
 
     .line {
@@ -927,7 +927,7 @@ top: 15px;
     }
     .leftsection {
         font-size: 1rem;
-        color: #EEEEEE;
+        color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
     }
 }
@@ -994,7 +994,7 @@ top: 15px;
     }
     .leftsection {
         font-size: 1.2rem;
-        color: #EEEEEE;
+        color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 222px -24px;
     }
