@@ -9,8 +9,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:
-    #222831;
+    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
     background-size: cover;
     animation: animatecolor 4s linear infinite;
     box-sizing: border-box;
@@ -135,7 +134,7 @@ main{
 }
 
     body {
-        background: #222831;
+        background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
         color: #E1E8ED;
         font-family: 'Poppins', sans-serif;
        margin:0px;
@@ -153,7 +152,8 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 55px;
-    background-color: rgb(57, 62, 70);
+    /* background-color: rgb(57, 62, 70); */
+    background: linear-gradient(90deg,#031222 0%,rgb(57,62,70)100%);
     z-index: 1000; 
     font-family: 'Noto Serif', serif;
 }
@@ -273,7 +273,7 @@ nav {
     
     .logos {
         text-align: center; /* Center align the logos horizontally */
-        background-color: #222831;
+        /* background: linear-gradient(90deg,#081727 0%,#222831 100%); */
 
         border: none;
         margin-bottom: 20px;
@@ -294,17 +294,16 @@ nav {
  
 /* Footer styles for the Contact Me page */
 .main-content {
-    background-color: #222831;
+    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
     padding: 5px;
     text-align: center;
-    /* Center-align content horizontally */
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     display: none; /* Initially hide the section */
-    z-index: 999; /* Add a high z-index to keep it above other content */
+
 }
 
 .main-content #msg {
