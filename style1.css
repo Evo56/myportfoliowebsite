@@ -825,7 +825,7 @@ top: 15px;
     main img {
         width: 173px;
         max-width: 400px;
-        margin: -323px -222px;
+        margin: -313px -177px;
         
     }
     .font{
@@ -860,10 +860,10 @@ top: 15px;
         margin: -14px 12px; /* Adjust the margin */
     }
     .leftsection {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 187px 98px;
+        margin: 196px 67px;
     }
     
 }
