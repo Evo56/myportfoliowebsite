@@ -404,7 +404,7 @@ top: 15px;
         }
     
         #navbar.active {
-            height: 20vh; /* Increase the height when active */
+            height: 16vh; /* Increase the height when active */
         }
         nav ul li a:hover {
             font-size: 1.01rem;
@@ -530,273 +530,12 @@ top: 15px;
 /* Your existing styles here */
 
 /* Media query for iPhone SE */
-@media screen and (max-width: 320px) {
-    /* Adjustments for smaller screens like iPhone SE */
-    nav {
-        height: 45px; /* Reduce the height of the navigation bar */
-    }
-    .firstsection > div {
-        width: 20%;
-    }
 
-    nav img {
-        height: 50px;
-        width: 86px; /* Adjust the logo size for smaller screens */
-    }
-
-    nav ul li {
-        margin: 0 10px; /* Reduce the margin between navigation items */
-    }
-
-    .firstsection {
-        margin-top: 90px; /* Reduce the margin-top for the first section */
-    }
-
-    .main img {
-        width: 120px; /* Reduce the image width */
-        height: 70%; /* Adjust the image height */
-        margin: 40px 30px; /* Adjust the margin around the image */
-        border-radius: 30px; /* Reduce the border radius */
-    }
-
-    /* Other specific adjustments for the iPhone SE */
-
-    #about h2 {
-        font-size: 25px; /* Adjust font size for smaller screens */
-    }
-
-    #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .aboutclass {
-        margin-top: 150px; /* Adjust the margin-top for the about section */
-    }
-
-    #photome img {
-        width: 230px; /* Adjust the image width */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 80px; /* Adjust the border radius */
-        margin:30px 25px;
-    }
-
-    .burger {
-        display: block; /* Display the burger menu icon */
-    }
-
-    footer.main-content {
-        padding: 10px; /* Reduce the padding */
-    }
-
-    footer.main-content .flex img {
-        height: 28px; /* Reduce the image height */
-        width: 28px; /* Reduce the image width */
-        margin: 10px 12px; /* Adjust vertical and horizontal margins */
-    }
-
-}
-/* Your existing styles here */
-
-/* Media query for Google Nest Hub */
-@media screen and (max-width: 700px) {
-    /* Adjustments for Google Nest Hub */
-
-    nav {
-        height: 40px; /* Reduce the height of the navigation bar */
-    }
-
-    nav img {
-        height: 60px; /* Adjust the logo size for Nest Hub */
-        width: auto; /* Maintain aspect ratio */
-    }
-
-    nav ul li {
-        margin: 0 8px; /* Reduce the margin between navigation items */
-    }
-
-    .firstsection {
-        margin-top: 60px; /* Reduce the margin-top for the first section */
-    }
-
-    .main img {
-        width: 300px; /* Reduce the image width */
-        height: auto; /* Maintain aspect ratio */
-        margin: 96px 45px; 
-        /* Adjust the margin around the image */
-        border-radius: 20px; /* Reduce the border radius */
-    }
-
-    /* Other specific adjustments for Google Nest Hub */
-
-    #about h2 {
-        font-size: 28px; /* Adjust font size for Nest Hub */
-    }
-
-    #about p {
-        font-size: 18px; /* Adjust font size for Nest Hub */
-    }
-
-    .aboutclass {
-        margin-top: -258px; /* Adjust the margin-top for the about section */
-    }
-
-    #photome img {
-        width: 200px; /* Reduce the image width */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 60px;
-        margin:23px 21px; /* Adjust the border radius */
-    }
-
-    .burger {
-        display: block; /* Display the burger menu icon */
-    }
-
-    footer.main-content {
-        padding: 10px; /* Reduce the padding */
-    }
-
-    footer.main-content .flex img {
-        height: 28px; /* Reduce the image height */
-        width: 28px; /* Reduce the image width */
-        margin: 10px 12px; /* Adjust vertical and horizontal margins */
-    }
-}
 /* Your existing styles here */
 
 /* Media query for Galaxy Fold */
-@media screen and (max-width: 600px) {
-    /* Adjustments for Galaxy Fold or similar devices */
-    .leftsection {
-        font-size: 1.2rem;
-        color:#E1E8ED;
-        font-family: 'Mooli', sans-serif;
-        margin: 222px -24px;
-    }
-    nav {
-        height: 20px; /* Reduce the height of the navigation bar */
-    }
 
-    nav img {
-        height: 20px; /* Adjust the logo size for Nest Hub */
-        width: auto; /* Maintain aspect ratio */
-    }
 
-    nav ul li {
-        margin: 0 4px; /* Reduce the margin between navigation items */
-    }
-
-    .firstsection {
-        margin-top: 30px; /* Reduce the margin-top for the first section */
-    }
-
-    .main img {
-        width: 250px; /* Reduce the image width */
-        height: auto; /* Maintain aspect ratio */
-        margin: 96px 45px; 
-        /* Adjust the margin around the image */
-        border-radius: 20px; /* Reduce the border radius */
-    }
-    .line {
-        width: 30px; /* Adjust the width of the burger menu lines */
-    }
-
-    footer.main-content {
-        padding: 5px; /* Reduce the padding */
-    }
-
-    footer.main-content .flex img {
-        height: 24px; /* Further reduce the image height */
-        width: 24px; /* Further reduce the image width */
-        margin: 5px 8px; /* Adjust vertical and horizontal margins */
-    }
-
-    main img {
-        width: 100%; /* Make the image span the full width */
-        margin: 100px 0; /* Adjust spacing between the image and text */
-        border-radius: 2px; /* Reduce the border radius */
-    }
-
-    #photome img {
-        width: 330px; /* Adjust the image width */
-        max-width: 400px; /* Set a maximum width to avoid stretching */
-        border-radius: 20px; /* Remove the border radius on smaller screens */
-    }
-
-    #about h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 6px; /* Adjust margin-top for smaller screens */
-    }
-
-    #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
-    }
-
-    .logos img {
-        width: 180px; /* Adjust the image width */
-        height: 58px; /* Adjust the image height */
-        margin: -14px 12px; /* Adjust the margin */
-    }
-
-    /* Additional adjustments as needed for Galaxy Fold */
-}
-@media screen and (max-width: 1100px) {
-    #navbar.active {
-        height: 15vh; /* Adjust the height for screens up to 1100px width */
-    }
-
-    nav ul li a:hover {
-        font-size: 1rem; /* Adjust font size for screens up to 1100px width */
-        color: #00ADB5;
-    }
-
-    .line {
-        width: 30px; /* Adjust the width of the burger menu lines */
-    }
-
-    footer.main-content {
-        padding: 10px; /* Reduce the padding */
-    }
-
-    footer.main-content .flex img {
-        height: 28px; /* Reduce the image height */
-        width: 28px; /* Reduce the image width */
-        margin: 10px 12px; /* Adjust vertical and horizontal margins */
-    }
-
-    main img {
-        margin: 100px 0; /* Adjust spacing between the image and text */
-        border-radius: 30px; /* Reduce the border radius */
-    }
-
-    #photome img {
-        width: 280px; /* Adjust the image width */
-        max-width: 400px; /* Set a maximum width to avoid stretching */
-        border-radius: 20px; /* Remove the border radius on smaller screens */
-    }
-
-    #about h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 6px; /* Adjust margin-top for smaller screens */
-    }
-
-    #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
-    }
-
-    .logos img {
-        width: 180px; /* Adjust the image width */
-        height: 58px; /* Adjust the image height */
-        margin: -14px 12px; /* Adjust the margin */
-    }
-}
 @media screen and (max-width: 900px) {
     /* Adjustments for screens up to 900px width */
 
@@ -825,7 +564,7 @@ top: 15px;
     main img {
         width: 173px;
         max-width: 400px;
-        margin: -313px -177px;
+        margin: -315px -163px;
         
     }
     .font{
@@ -863,73 +602,12 @@ top: 15px;
         font-size: 1.3rem;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 196px 67px;
+        margin: 176px 28px;
     }
     
 }
 
-@media screen and (max-width: 280px) {
-    
-    #navbar.active {
-        height: 10vh;
-    }
 
-    nav ul li a:hover {
-        font-size: 0.8rem; 
-        color: #00ADB5;
-    }
-
-    .line {
-        width: 20px; 
-    }
-
-    footer.main-content {
-        padding: 5px; 
-    }
-
-    footer.main-content .flex img {
-        height: 20px; 
-        width: 20px; 
-        margin: 5px 6px; 
-    }
-
-    main img {
-        margin: -104px -1px; 
-        border-radius: 15px; 
-        width:80px;
-    }
-
-    #photome img {
-        width: 150px; /* Adjust image width */
-        max-width: 300px; /* Adjust max width */
-        border-radius: 10px; /* Adjust border radius */
-        margin: 230px 2px; /* Adjust margins */
-    }
-
-    #about h2 {
-        font-size: 20px; /* Adjust font size */
-        margin-top: 4px; /* Adjust margin */
-    }
-
-    #about p {
-        font-size: 15x; /* Adjust font size */
-    }
-
-    .aboutclass p {
-        margin: 12px; /* Adjust margin */
-    }
-
-    .logos img {
-        width: 150px; /* Adjust image width */
-        height: 48px; /* Adjust image height */
-        margin: -10px 8px; /* Adjust image margins */
-    }
-    .leftsection {
-        font-size: 1rem;
-        color: #E1E8ED;
-        font-family: 'Mooli', sans-serif;
-    }
-}
 
 @media screen and (max-width: 390px)
 { 
@@ -991,10 +669,9 @@ top: 15px;
         margin: -9px 12px;
     }
     .leftsection {
-       /* font-size: 1.2rem; */
-       color: #E1E8ED;
-       font-family: 'Mooli', sans-serif;
-       margin: 130px 54px;
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 170px 14px;
     }
     .main-content #msg {
         font-size: 25px;
