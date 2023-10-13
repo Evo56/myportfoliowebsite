@@ -108,13 +108,7 @@ box-sizing: border-box;
          font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
     }
-    .nep{
-        width: 41px;
-    border-color: #222831;
-    margin-left: 368px;
-    margin-top: -44px;
-    margin-bottom: 26px;
-}
+
    
 
 
@@ -149,6 +143,23 @@ main{
     }
     /* Navigation styles */
    /* Navigation styles */
+   .particlesjs{
+    width:100%;
+    height:100%;
+    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+   }
+   .particlesjs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Place the mask above other content */
+}
 nav {
     position: fixed; /* Make the navigation bar sticky */
     top: 0; /* Stick it to the top of the viewport */
@@ -159,7 +170,7 @@ nav {
     height: 55px;
     /* background-color: rgb(57, 62, 70); */
     background: linear-gradient(90deg,#031222 0%,rgb(57,62,70)100%);
-    z-index: 1000; 
+    z-index: 5000; 
     font-family: 'Noto Serif', serif;
 }
 
@@ -228,17 +239,20 @@ nav {
     .firstsection > div {
         width: 30%;
     }
+   
     
     .leftsection {
         font-size: 2.5rem;
         color:#E1E8ED;
         font-family: 'Mooli', sans-serif;
+        z-index: 3000;
     }
     
     .purple {
         color: #00ADB5;
         font-size: 3rem;
     }
+   
     
     main img {
         width: 400px;
@@ -246,6 +260,7 @@ nav {
         border: solid rgba(0,255,255,.2);
         margin: 55px 65px;
         border-radius: 40px;
+        z-index: 3000;
     }
     
     /* Animation */
@@ -358,7 +373,7 @@ nav {
         font-size: 40px;
         font-family: 'Noto Serif', serif;
         color: #00ADB5;
-        margin-top: 336px;
+        margin-top: 400px;
     }
     #about p{
         font-size: 25px;
@@ -429,6 +444,7 @@ top: 15px;
         nav {
             /* ... (your existing styles) ... */
             animation: fadeIn 1s ease-in-out; /* Add the animation property */
+            z-index: 5000; 
         }
         
     
@@ -449,7 +465,7 @@ top: 15px;
         .burger {
             display: block;
             position: fixed;
-            z-index: 1000;
+            z-index: 5000;
             cursor: pointer;
         }
        
@@ -570,7 +586,7 @@ top: 15px;
     main img {
         width: 173px;
         max-width: 400px;
-        margin:-339px -138px
+        margin:-391px -313px;
         
     }
     .font{
@@ -608,7 +624,7 @@ top: 15px;
         font-size: 1.3rem;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 53px 5px;;
+        margin: 53px 34px;
     }
     
 }
@@ -641,7 +657,7 @@ top: 15px;
 
     main img {
         width: 131px;
-        margin: -300px -141px;
+    margin: -323px -275px;
     }
     .font{
         font-size: 15px;
@@ -658,7 +674,7 @@ top: 15px;
 
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 450px; /* Adjust margin-top for smaller screens */
+        margin-top: 390px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
@@ -677,7 +693,7 @@ top: 15px;
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 170px 14px;
+        margin: 163px 35px;
     }
     .main-content #msg {
         font-size: 25px;
