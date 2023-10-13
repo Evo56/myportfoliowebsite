@@ -398,6 +398,7 @@ nav {
         height: auto; /* Maintain aspect ratio */
         border-radius: 118px;
         margin: 159px 32px;
+        z-index: 3000;
     }
     .burger{
         display: none;
