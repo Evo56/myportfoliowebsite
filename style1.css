@@ -660,7 +660,7 @@ top: 15px;
     }
 
     main img {
-        width: 131px;
+        width: 180px;
     margin: -323px -275px;
     }
     .font{
@@ -671,9 +671,9 @@ top: 15px;
     }
 
     #photome img {
-        width: 150px; /* Adjust the image width */
+        width: 234px; /* Adjust the image width */
         max-width: 400px; /* Set a maximum width to avoid stretching */
-        margin: 129px 30px;; /* Remove the border radius on smaller screens */
+        margin: 111px; /* Remove the border radius on smaller screens */
     }
 
     #about h2 {
