@@ -711,7 +711,7 @@ top: 15px;
 
 
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 390px)
 { 
     #navbar.active {
         height: 18vh;
