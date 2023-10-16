@@ -671,7 +671,7 @@ top: 15px;
     
         
     }
-    @media screen and (max-width:805px) {
+    @media screen and (max-width:768px) {
         /* Adjustments for screens up to 900px width */
     
         #navbar {
@@ -820,7 +820,7 @@ top: 15px;
         
     }
     
-    @media screen and (width:768px) {
+    @media screen and (max-width:435px) {
         /* Adjustments for screens up to 900px width */
     
         #navbar {
@@ -920,7 +920,7 @@ top: 15px;
     
         main img {
         width: 180px;
-        margin: -388px -441px;
+        margin: -388px -314px;
         }
         .font{
             font-size: 1.5rem;
