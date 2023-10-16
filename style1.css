@@ -671,5 +671,304 @@ top: 15px;
     
         
     }
+    @media screen and (max-width:805px) {
+        /* Adjustments for screens up to 900px width */
+    
+        #navbar {
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            height: 0; /* Set initial height to 0 */
+            transition: height 0.3s ease; /* Add a smooth transition effect for height */
+        }
+    
+        #navbar.active {
+            height: 16vh; /* Increase the height when active */
+        }
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: #00ADB5;
+        }
+        /* Add this CSS code to your existing styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav {
+            /* ... (your existing styles) ... */
+            animation: fadeIn 1s ease-in-out; /* Add the animation property */
+            z-index: 5000; 
+        }
+        
+    
+        #navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #navbar ul li {
+            margin: 10px 0;
+            color: #E1E8ED;
+        }
+    
+        #navbar img {
+            display: none;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            z-index: 5000;
+            cursor: pointer;
+        }
+       
+        .line {
+            width: 33px;
+            background-color: #00ADB5;
+            height: 4px;
+            margin: 3px 0;
+           transition: 0.3s ease-in;
+        }
+    
+        .h-nav-resp {
+            height: 201px;
+        }
+    
+        .v-class-resp {
+            opacity: 0;
+            color: #00ADB5;
+        }
+        nav ul li a:hover {
+            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            color: #00ADB5;
+        }
+        nav img {
+            height: 20px; 
+            width: auto; 
+        }
+        .line {
+            width: 30px; 
+        }
+    
+        footer.main-content {
+            padding: 10px; 
+        }
+    
+        footer.main-content .flex img {
+            height: 15px; 
+            width: 15px;
+            margin: 10px 12px; 
+        }
+    
+        main img {
+            width: 180px;
+        margin: -388px -306px;
+        }
+        .font{
+            font-size: 1.5rem;
+        }
+        .purple{
+            font-size: 45px;
+        }
+    
+        #photome img {
+            width: 234px;
+            max-width: 400px;
+            margin: 145px;
+            border-radius: 16px;
+        }
+    
+        #about h2 {
+            font-size: 24px; /* Adjust font size for smaller screens */
+            margin-top: -44px; /* Adjust margin-top for smaller screens */
+        }
+    
+        #about p {
+            font-size: 18px; /* Adjust font size for smaller screens */
+        }
+    
+        .aboutclass p {
+            margin: 16px; /* Adjust margin for smaller screens */
+        }
+    
+        .logos img {
+            width: 112px;
+            height: 39px;
+            margin: -9px 12px;
+        }
+        .leftsection {
+            color: #E1E8ED;
+            font-family: 'Mooli', sans-serif;
+            margin: 163px 35px;
+        }
+        .main-content #msg {
+            font-size: 25px;
+            color: #00ADB5;
+            font-family: 'Noto Serif', serif;
+        }
+         
+    
+        
+    }
+    
+    @media screen and (width:768px) {
+        /* Adjustments for screens up to 900px width */
+    
+        #navbar {
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            height: 0; /* Set initial height to 0 */
+            transition: height 0.3s ease; /* Add a smooth transition effect for height */
+        }
+    
+        #navbar.active {
+            height: 16vh; /* Increase the height when active */
+        }
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: #00ADB5;
+        }
+        /* Add this CSS code to your existing styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav {
+            /* ... (your existing styles) ... */
+            animation: fadeIn 1s ease-in-out; /* Add the animation property */
+            z-index: 5000; 
+        }
+        
+    
+        #navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #navbar ul li {
+            margin: 10px 0;
+            color: #E1E8ED;
+        }
+    
+        #navbar img {
+            display: none;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            z-index: 5000;
+            cursor: pointer;
+        }
+       
+        .line {
+            width: 33px;
+            background-color: #00ADB5;
+            height: 4px;
+            margin: 3px 0;
+           transition: 0.3s ease-in;
+        }
+    
+        .h-nav-resp {
+            height: 201px;
+        }
+    
+        .v-class-resp {
+            opacity: 0;
+            color: #00ADB5;
+        }
+        nav ul li a:hover {
+            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            color: #00ADB5;
+        }
+        nav img {
+            height: 20px; 
+            width: auto; 
+        }
+        .line {
+            width: 30px; 
+        }
+    
+        footer.main-content {
+            padding: 10px; 
+        }
+    
+        footer.main-content .flex img {
+            height: 15px; 
+            width: 15px;
+            margin: 10px 12px; 
+        }
+    
+        main img {
+        width: 180px;
+        margin: -388px -441px;
+        }
+        .font{
+            font-size: 1.5rem;
+        }
+        .purple{
+            font-size: 45px;
+        }
+    
+        #photome img {
+            width: 234px;
+            max-width: 400px;
+            margin: 145px;
+            border-radius: 16px;
+        }
+    
+        #about h2 {
+            font-size: 24px; /* Adjust font size for smaller screens */
+            margin-top: -44px; /* Adjust margin-top for smaller screens */
+        }
+    
+        #about p {
+            font-size: 18px; /* Adjust font size for smaller screens */
+        }
+    
+        .aboutclass p {
+            margin: 16px; /* Adjust margin for smaller screens */
+        }
+    
+        .logos img {
+            width: 112px;
+            height: 39px;
+            margin: -9px 12px;
+        }
+        .leftsection {
+            color: #E1E8ED;
+            font-family: 'Mooli', sans-serif;
+            margin: 163px 35px;
+        }
+        .main-content #msg {
+            font-size: 25px;
+            color: #00ADB5;
+            font-family: 'Noto Serif', serif;
+        }
+         
+    
+        
+    }
+    
+    
     
     
