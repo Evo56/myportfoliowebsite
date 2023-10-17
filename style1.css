@@ -386,589 +386,705 @@ top: 15px;
 
     }
     
-    @media only screen and (max-width: 393px) {
-        #navbar {
-            flex-direction: column;
-            width: 100%;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
-        }
+   
+   
     
-        #navbar.active {
-            height: 16vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
     
-        #navbar ul {
-            flex-direction: column;
-            align-items: center;
-        }
     
-        #navbar ul li {
-            margin: 10px 0;
-            color: #E1E8ED;
-        }
-    
-        #navbar img {
-            display: none;
-        }
-    
-        .burger {
-            display: block;
-            position: fixed;
-            z-index: 5000;
-            cursor: pointer;
-        }
-       
-        .line {
-            width: 33px;
-            background-color: #00ADB5;
-            height: 4px;
-            margin: 3px 0;
-           transition: 0.3s ease-in;
-        }
-    
-        .h-nav-resp {
-            height: 201px;
-        }
-        .v-class-resp {
+    /* correction for media queries */
+    /* iPhone SE */
+    @media (max-width: 480px) { 
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        height: 0; /* Set initial height to 0 */
+        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+    }
+
+    #navbar.active {
+        height: 16vh; /* Increase the height when active */
+    }
+    nav ul li a:hover {
+        font-size: 1.01rem;
+        color: #00ADB5;
+    }
+    /* Add this CSS code to your existing styles */
+    @keyframes fadeIn {
+        from {
             opacity: 0;
-            color: #00ADB5;
         }
-        /* Add styles for the footer */
-        footer.main-content {
-            background-color: #222831;
-            color: #E1E8ED;
-            padding: 20px;
-            text-align: center;
+        to {
+            opacity: 1;
         }
-        
-        footer.main-content .flex {
-            display: flex;
-            flex-direction: column; /* Change flex direction to column */
-            justify-content: center;
-            align-items: center;
-        }
-        
-        footer.main-content .flex img {
-            height: 32px;
-            width: 32px;
-            margin: 10px 14px; /* Add vertical margin */
-        }
-        
+    }
     
-    
-              
-        
-        main img {
-            width: 100%; /* Make the image span the full width */
-            height:auto; /* Maintain aspect ratio */
-            margin: 150px 0; /* Add spacing between the image and text */
-            height: 80%;
-            border: solid #00ADB5;
-            border-radius: 40px;
+    nav {
+        /* ... (your existing styles) ... */
+        animation: fadeIn 1s ease-in-out; /* Add the animation property */
+        z-index: 5000; 
+    }
     
 
-        }
-        #photome img {
-            width: 340px; /* Make the image span the full width of its container */
-            max-width: 400px; /* Set a maximum width to avoid stretching */
-            height: auto;
-            border-radius: 20px; /* Remove the border radius on smaller screens */
-        }
-        #about h2 {
-            font-size: 28px; /* Adjust font size for smaller screens */
-            margin-top: 8px; /* Adjust margin-top for smaller screens */
-        }
-        #about p {
-            font-size: 20px; /* Adjust font size for smaller screens */
-        }
-    
-        .aboutclass p {
-            margin: 20px; /* Adjust margin for smaller screens */
-        }
-        .logos img {
-            width: 214px;
-            height: 68px;
-            margin: -20px 17px;
-            border: none;
-        }
-        .leftsection {
-            font-size: 2rem;
-            color: #E1E8ED;
-            font-family: 'Noto Serif', serif;
-        }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
     }
-    @media screen and (max-width: 414px) {
-        /* Adjustments for screens up to 900px width */
-    
-        #navbar {
-            flex-direction: column;
-            width: 100%;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
-        }
-    
-        #navbar.active {
-            height: 16vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
-    
-        #navbar ul {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        #navbar ul li {
-            margin: 10px 0;
-            color: #E1E8ED;
-        }
-    
-        #navbar img {
-            display: none;
-        }
-    
-        .burger {
-            display: block;
-            position: fixed;
-            z-index: 5000;
-            cursor: pointer;
-        }
-       
-        .line {
-            width: 33px;
-            background-color: #00ADB5;
-            height: 4px;
-            margin: 3px 0;
-           transition: 0.3s ease-in;
-        }
-    
-        .h-nav-resp {
-            height: 201px;
-        }
-    
-        .v-class-resp {
-            opacity: 0;
-            color: #00ADB5;
-        }
-        nav ul li a:hover {
-            font-size: 1rem; /* Adjust font size for screens up to 900px width */
-            color: #00ADB5;
-        }
-        nav img {
-            height: 20px; 
-            width: auto; 
-        }
-        .line {
-            width: 30px; 
-        }
-    
-        footer.main-content {
-            padding: 10px; 
-        }
-    
-        footer.main-content .flex img {
-            height: 15px; 
-            width: 15px;
-            margin: 10px 12px; 
-        }
-    
-        main img {
-            width: 180px;
-        margin: -388px -306px;
-        }
-        .font{
-            font-size: 1.5rem;
-        }
-        .purple{
-            font-size: 45px;
-        }
-    
-        #photome img {
-            width: 234px;
-            max-width: 400px;
-            margin: 145px;
-            border-radius: 16px;
-        }
-    
-        #about h2 {
-            font-size: 24px; /* Adjust font size for smaller screens */
-            margin-top: -44px; /* Adjust margin-top for smaller screens */
-        }
-    
-        #about p {
-            font-size: 18px; /* Adjust font size for smaller screens */
-        }
-    
-        .aboutclass p {
-            margin: 16px; /* Adjust margin for smaller screens */
-        }
-    
-        .logos img {
-            width: 112px;
-            height: 39px;
-            margin: -9px 12px;
-        }
-        .leftsection {
-            color: #E1E8ED;
-            font-family: 'Mooli', sans-serif;
-            margin: 163px 35px;
-        }
-        .main-content #msg {
-            font-size: 25px;
-            color: #00ADB5;
-            font-family: 'Noto Serif', serif;
-        }
-         
-    
-        
+
+    #navbar ul li {
+        margin: 10px 0;
+        color: #E1E8ED;
     }
-    @media screen and (max-width:768px) {
-        /* Adjustments for screens up to 900px width */
-    
-        #navbar {
-            flex-direction: column;
-            width: 100%;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
-        }
-    
-        #navbar.active {
-            height: 16vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
-    
-        #navbar ul {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        #navbar ul li {
-            margin: 10px 0;
-            color: #E1E8ED;
-        }
-    
-        #navbar img {
-            display: none;
-        }
-    
-        .burger {
-            display: block;
-            position: fixed;
-            z-index: 5000;
-            cursor: pointer;
-        }
-       
-        .line {
-            width: 33px;
-            background-color: #00ADB5;
-            height: 4px;
-            margin: 3px 0;
-           transition: 0.3s ease-in;
-        }
-    
-        .h-nav-resp {
-            height: 201px;
-        }
-    
-        .v-class-resp {
-            opacity: 0;
-            color: #00ADB5;
-        }
-        nav ul li a:hover {
-            font-size: 1rem; /* Adjust font size for screens up to 900px width */
-            color: #00ADB5;
-        }
-        nav img {
-            height: 20px; 
-            width: auto; 
-        }
-        .line {
-            width: 30px; 
-        }
-    
-        footer.main-content {
-            padding: 10px; 
-        }
-    
-        footer.main-content .flex img {
-            height: 15px; 
-            width: 15px;
-            margin: 10px 12px; 
-        }
-    
-        main img {
-            width: 180px;
-        margin: -388px -306px;
-        }
-        .font{
-            font-size: 1.5rem;
-        }
-        .purple{
-            font-size: 45px;
-        }
-    
-        #photome img {
-            width: 234px;
-            max-width: 400px;
-            margin: 145px;
-            border-radius: 16px;
-        }
-    
-        #about h2 {
-            font-size: 24px; /* Adjust font size for smaller screens */
-            margin-top: -44px; /* Adjust margin-top for smaller screens */
-        }
-    
-        #about p {
-            font-size: 18px; /* Adjust font size for smaller screens */
-        }
-    
-        .aboutclass p {
-            margin: 16px; /* Adjust margin for smaller screens */
-        }
-    
-        .logos img {
-            width: 112px;
-            height: 39px;
-            margin: -9px 12px;
-        }
-        .leftsection {
-            color: #E1E8ED;
-            font-family: 'Mooli', sans-serif;
-            margin: 163px 35px;
-        }
-        .main-content #msg {
-            font-size: 25px;
-            color: #00ADB5;
-            font-family: 'Noto Serif', serif;
-        }
-         
-    
-        
+
+    #navbar img {
+        display: none;
     }
-    
-    @media screen and (max-width:435px) {
-        /* Adjustments for screens up to 900px width */
-    
-        #navbar {
-            flex-direction: column;
-            width: 100%;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
-        }
-    
-        #navbar.active {
-            height: 16vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
-    
-        #navbar ul {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        #navbar ul li {
-            margin: 10px 0;
-            color: #E1E8ED;
-        }
-    
-        #navbar img {
-            display: none;
-        }
-    
-        .burger {
-            display: block;
-            position: fixed;
-            z-index: 5000;
-            cursor: pointer;
-        }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+        cursor: pointer;
+    }
+   
+    .line {
+        width: 33px;
+        background-color: #00ADB5;
+        height: 4px;
+        margin: 3px 0;
+       transition: 0.3s ease-in;
+    }
+
+    .h-nav-resp {
+        height: 201px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        color: #00ADB5;
+    }
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 15px; 
+        width: 15px;
+        margin: 10px 12px; 
+    }
+
+    main img {
        
-        .line {
-            width: 33px;
-            background-color: #00ADB5;
-            height: 4px;
-            margin: 3px 0;
-           transition: 0.3s ease-in;
-        }
-    
-        .h-nav-resp {
-            height: 201px;
-        }
-    
-        .v-class-resp {
-            opacity: 0;
-            color: #00ADB5;
-        }
-        nav ul li a:hover {
-            font-size: 1rem; /* Adjust font size for screens up to 900px width */
-            color: #00ADB5;
-        }
-        nav img {
-            height: 20px; 
-            width: auto; 
-        }
-        .line {
-            width: 30px; 
-        }
-    
-        footer.main-content {
-            padding: 10px; 
-        }
-    
-        footer.main-content .flex img {
-            height: 15px; 
-            width: 15px;
-            margin: 10px 12px; 
-        }
-    
-        main img {
         width: 180px;
-        margin: -388px -314px;
+        margin: -388px -301px;
+    }
+    .font{
+        font-size: 1.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 234px;
+        max-width: 400px;
+        margin: 120px;
+        border-radius: 16px;
+    }
+
+    #about h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: -44px; /* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 112px;
+        height: 39px;
+        margin: -9px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 163px 35px;
+    }
+    .main-content #msg {
+        font-size: 25px;
+        color: #00ADB5;
+        font-family: 'Noto Serif', serif;
+    }
+     
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        height: 0; /* Set initial height to 0 */
+        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+    }
+
+    #navbar.active {
+        height: 16vh; /* Increase the height when active */
+    }
+    nav ul li a:hover {
+        font-size: 1.01rem;
+        color: #00ADB5;
+    }
+    /* Add this CSS code to your existing styles */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
         }
-        .font{
-            font-size: 1.5rem;
+        to {
+            opacity: 1;
         }
-        .purple{
-            font-size: 45px;
-        }
-    
-        #photome img {
-            width: 234px;
-            max-width: 400px;
-            margin: 145px;
-            border-radius: 16px;
-        }
-    
-        #about h2 {
-            font-size: 24px; /* Adjust font size for smaller screens */
-            margin-top: -44px; /* Adjust margin-top for smaller screens */
-        }
-    
-        #about p {
-            font-size: 18px; /* Adjust font size for smaller screens */
-        }
-    
-        .aboutclass p {
-            margin: 16px; /* Adjust margin for smaller screens */
-        }
-    
-        .logos img {
-            width: 112px;
-            height: 39px;
-            margin: -9px 12px;
-        }
-        .leftsection {
-            color: #E1E8ED;
-            font-family: 'Mooli', sans-serif;
-            margin: 163px 35px;
-        }
-        .main-content #msg {
-            font-size: 25px;
-            color: #00ADB5;
-            font-family: 'Noto Serif', serif;
-        }
-         
-    
-        
     }
     
+    nav {
+        /* ... (your existing styles) ... */
+        animation: fadeIn 1s ease-in-out; /* Add the animation property */
+        z-index: 5000; 
+    }
     
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+        color: #E1E8ED;
+    }
+
+    #navbar img {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+        cursor: pointer;
+    }
+   
+    .line {
+        width: 33px;
+        background-color: #00ADB5;
+        height: 4px;
+        margin: 3px 0;
+       transition: 0.3s ease-in;
+    }
+
+    .h-nav-resp {
+        height: 201px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        color: #00ADB5;
+    }
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 22px; 
+        width: 21px;
+        margin: 10px 12px; 
+    }
+
+    main img {
+        width: 195px;
+        margin: -352px -438px;
+    }
+    .font{
+        font-size: 1.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 234px;
+        max-width: 400px;
+        margin: 145px;
+        border-radius: 16px;
+    }
+
+    #about h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: -44px; /* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 112px;
+        height: 39px;
+        margin: -9px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 163px 35px;
+    }
+    .main-content #msg {
+        font-size: 26px;
+        color: #00ADB5;
+        font-family: 'Noto Serif', serif;
+    }
+     
+
+}
+@media (min-width: 768px) and (max-width: 1024px){ 
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        height: 0; /* Set initial height to 0 */
+        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+    }
+
+    #navbar.active {
+        height: 11vh; /* Increase the height when active */
+    }
+    nav ul li a:hover {
+        font-size: 1.01rem;
+        color: #00ADB5;
+    }
+    /* Add this CSS code to your existing styles */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
     
+    nav {
+        /* ... (your existing styles) ... */
+        animation: fadeIn 1s ease-in-out; /* Add the animation property */
+        z-index: 5000; 
+    }
     
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+        color: #E1E8ED;
+    }
+
+    #navbar img {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+        cursor: pointer;
+    }
+   
+    .line {
+        width: 33px;
+        background-color: #00ADB5;
+        height: 4px;
+        margin: 3px 0;
+       transition: 0.3s ease-in;
+    }
+
+    .h-nav-resp {
+        height: 201px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        color: #00ADB5;
+    }
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 26px; 
+        width: 25px;
+        margin: 10px 12px; 
+    }
+
+    main img {
+        width: 233px;
+        margin: -353px -495px;
+    }
+    .font{
+        font-size: 1.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 234px;
+        max-width: 400px;
+        margin: 145px;
+        border-radius: 16px;
+    }
+
+    #about h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: -44px; /* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 112px;
+        height: 39px;
+        margin: -9px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 163px 35px;
+    }
+    .main-content #msg {
+        font-size: 28px;
+        color: #00ADB5;
+        font-family: 'Noto Serif', serif;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    /* Adjust styles specifically for iPad Air */
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        height: 0; /* Set initial height to 0 */
+        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+    }
+
+    #navbar.active {
+        height: 16vh; /* Increase the height when active */
+    }
+    nav ul li a:hover {
+        font-size: 1.01rem;
+        color: #00ADB5;
+    }
+    /* Add this CSS code to your existing styles */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    nav {
+        /* ... (your existing styles) ... */
+        animation: fadeIn 1s ease-in-out; /* Add the animation property */
+        z-index: 5000; 
+    }
+    
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+        color: #E1E8ED;
+    }
+
+    #navbar img {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+        cursor: pointer;
+    }
+   
+    .line {
+        width: 33px;
+        background-color: #00ADB5;
+        height: 4px;
+        margin: 3px 0;
+       transition: 0.3s ease-in;
+    }
+
+    .h-nav-resp {
+        height: 201px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        color: #00ADB5;
+    }
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 30px; 
+        width: 29px;
+        margin: 10px 12px; 
+    }
+
+    main img {
+        width: 302px;
+        margin: -376px -624px;
+    }
+    .font{
+        font-size: 1.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 360px;
+        max-width: 400px;
+        margin: 145px;
+        border-radius: 16px;
+    }
+
+    #about h2 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        margin-top: -44px; /* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 252px;
+        height: 92px;
+        margin: -9px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 163px 35px;
+    }
+    .main-content #msg {
+        font-size: 30px;
+        color: #00ADB5;
+        font-family: 'Noto Serif', serif;
+    }
+}
+@media (min-width: 1281px) { 
+    
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 101px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 39px;
+        width: 36px;
+        margin: 9px 31px;
+    }
+
+    main img {
+        width: 409px;
+        margin: 115px -132px;
+    }
+    .font{
+        font-size: 2.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 345px;
+        margin: 90px;
+        border-radius: 17px;
+    }
+
+    #about h2 {
+        font-size: 32px;
+        margin-top: 44px;
+    }
+
+    #about p {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 176px;
+        height: 70px;
+        margin: -9px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 163px 35px;
+        font:2.5rem;
+    }
+   /* Footer styles for the Contact Me page */
+.main-content {
+    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none; 
+    z-index: 5000;/* Initially hide the section */
+}
+
+.main-content #msg {
+    font-size: 35px;
+    color: #00ADB5;
+    font-family: 'Noto Serif', serif;
+}
+.secondfoot p{
+    font-size: 20px;
+ color:#E1E8ED;
+}
+
+.main-content .flex {
+    display: block;
+    text-align: center;
+}
+
+.main-content .first img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 30px; /* Add spacing between the logos */
+    margin: 20px 24px;
+
+}
+/* CSS for the social icons */
+.first img {
+    margin: 0 10px; /* Add margin to separate the icons */
+    opacity: 0.7; /* Set initial opacity */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Hover effect */
+.first img:hover {
+    opacity: 1; /* Change opacity to 1 on hover */
+   background-color:  rgb(57, 62, 70);
+   border-radius: 15px;
+}
+}
+
