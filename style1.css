@@ -492,7 +492,7 @@ top: 15px;
     main img {
        
         width: 180px;
-        margin: -388px -301px;
+        margin: -309px -291px;
     }
     .font{
         font-size: 1.5rem;
@@ -504,7 +504,7 @@ top: 15px;
     #photome img {
         width: 250px;
         max-width: 418px;
-        margin: 93px 23px;
+        margin:104px 23px;
         border-radius: 16px;
     }
 
@@ -529,7 +529,7 @@ top: 15px;
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 163px 35px;
+        margin: 120px 35px;
     }
     .main-content #msg {
         font-size: 25px;
@@ -553,7 +553,7 @@ top: 15px;
     }
 
     #navbar.active {
-        height: 16vh; /* Increase the height when active */
+        height: 15vh; /* Increase the height when active */
     }
     nav ul li a:hover {
         font-size: 1.01rem;
@@ -685,85 +685,12 @@ top: 15px;
 
 }
 @media (min-width: 768px) and (max-width: 1024px){ 
-    #navbar {
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-y: auto;
-        height: 0; /* Set initial height to 0 */
-        transition: height 0.3s ease; /* Add a smooth transition effect for height */
-    }
-
-    #navbar.active {
-        height: 11vh; /* Increase the height when active */
-    }
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        color: #00ADB5;
-    }
-    /* Add this CSS code to your existing styles */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    nav {
-        /* ... (your existing styles) ... */
-        animation: fadeIn 1s ease-in-out; /* Add the animation property */
-        z-index: 5000; 
-    }
-    
-
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navbar ul li {
-        margin: 10px 0;
-        color: #E1E8ED;
-    }
-
-    #navbar img {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        position: fixed;
-        z-index: 5000;
-        cursor: pointer;
-    }
-   
-    .line {
-        width: 33px;
-        background-color: #00ADB5;
-        height: 4px;
-        margin: 3px 0;
-       transition: 0.3s ease-in;
-    }
-
-    .h-nav-resp {
-        height: 201px;
-    }
-
-    .v-class-resp {
-        opacity: 0;
-        color: #00ADB5;
-    }
     nav ul li a:hover {
         font-size: 1rem; /* Adjust font size for screens up to 900px width */
         color: #00ADB5;
     }
     nav img {
-        height: 20px; 
+        height: 101px; 
         width: auto; 
     }
     .line {
@@ -782,7 +709,7 @@ top: 15px;
 
     main img {
         width: 233px;
-        margin: -353px -495px;
+        margin: -353px -490px;
     }
     .font{
         font-size: 1.5rem;
@@ -794,7 +721,7 @@ top: 15px;
     #photome img {
         width: 234px;
         max-width: 400px;
-        margin: 145px;
+        margin: 43px;
         border-radius: 16px;
     }
 
@@ -830,90 +757,18 @@ top: 15px;
 
 @media (min-width: 1025px) and (max-width: 1280px){ 
     /* Adjust styles specifically for iPad Air */
-    #navbar {
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-y: auto;
-        height: 0; /* Set initial height to 0 */
-        transition: height 0.3s ease; /* Add a smooth transition effect for height */
-    }
-
-    #navbar.active {
-        height: 16vh; /* Increase the height when active */
-    }
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        color: #00ADB5;
-    }
-    /* Add this CSS code to your existing styles */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    nav {
-        /* ... (your existing styles) ... */
-        animation: fadeIn 1s ease-in-out; /* Add the animation property */
-        z-index: 5000; 
-    }
-    
-
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navbar ul li {
-        margin: 10px 0;
-        color: #E1E8ED;
-    }
-
-    #navbar img {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        position: fixed;
-        z-index: 5000;
-        cursor: pointer;
-    }
-   
-    .line {
-        width: 33px;
-        background-color: #00ADB5;
-        height: 4px;
-        margin: 3px 0;
-       transition: 0.3s ease-in;
-    }
-
-    .h-nav-resp {
-        height: 201px;
-    }
-
-    .v-class-resp {
-        opacity: 0;
-        color: #00ADB5;
-    }
     nav ul li a:hover {
         font-size: 1rem; /* Adjust font size for screens up to 900px width */
         color: #00ADB5;
     }
     nav img {
-        height: 20px; 
+        height: 101px; 
         width: auto; 
     }
     .line {
         width: 30px; 
     }
+  
 
     footer.main-content {
         padding: 10px; 
@@ -927,7 +782,7 @@ top: 15px;
 
     main img {
         width: 302px;
-        margin: -376px -624px;
+        margin: -376px -590px;
     }
     .font{
         font-size: 1.5rem;
