@@ -484,8 +484,8 @@ top: 15px;
     }
 
     footer.main-content .flex img {
-        height: 15px; 
-        width: 15px;
+        height: 20px; 
+        width: 19px;
         margin: 10px 12px; 
     }
 
@@ -502,9 +502,9 @@ top: 15px;
     }
 
     #photome img {
-        width: 234px;
-        max-width: 400px;
-        margin: 120px;
+        width: 250px;
+        max-width: 418px;
+        margin: 93px 23px;
         border-radius: 16px;
     }
 
