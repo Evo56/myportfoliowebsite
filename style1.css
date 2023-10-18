@@ -653,7 +653,7 @@ top: 15px;
     main img {
        
         width: 180px;
-        margin: -361px -305px
+        margin: -361px -296px;
     }
     .font{
         font-size: 1.5rem;
@@ -665,7 +665,7 @@ top: 15px;
     #photome img {
         width: 214px;
         max-width: 418px;
-        margin:115px 23px;
+        margin:108px 23px;
         border-radius: 16px;
     }
 
