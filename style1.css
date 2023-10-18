@@ -8,7 +8,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+    background-color: #0E2431;
     background-size: cover;
     animation: animatecolor 4s linear infinite;
     box-sizing: border-box;
@@ -113,7 +113,7 @@ main{
 }
 
     body {
-        background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+       background: #0E2431;
         color: #E1E8ED;
         font-family: 'Poppins', sans-serif;
        margin:0px;
@@ -131,7 +131,6 @@ main{
    .particlesjs{
     width:100%;
     height:100%;
-    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -226,6 +225,9 @@ nav {
     color:#E1E8ED;
     font-family: 'Mooli', sans-serif;
     z-index: 3000;
+  background-color: #0E2431;
+    border-radius: 30px;
+
 }
 
 .purple {
@@ -293,7 +295,7 @@ main img {
  
 /* Footer styles for the Contact Me page */
 .main-content {
-    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+    background: #0E2431;
     padding: 5px;
     text-align: center;
     position: fixed;
@@ -352,10 +354,14 @@ main img {
         font-family: 'Noto Serif', serif;
         color: #00ADB5;
         margin-top: 293px;
+        background-color:#0E2431;
+        z-index: 3000;
     }
     #about p{
         font-size: 25px;
         font-family: 'Mooli', sans-serif;
+        background-color:#0E2431;
+        z-index: 3000;
     }
     .aboutclass {
         text-align: center; /* Center-align the text in the section */
@@ -512,11 +518,13 @@ top: 15px;
     
         #about h2 {
             font-size: 20px; /* Adjust font size for smaller screens */
-            margin-top: 64px; /* Adjust margin-top for smaller screens */
+            margin-top: 64px; 
+            background-color: #0E2431;/* Adjust margin-top for smaller screens */
         }
     
         #about p {
-            font-size: 14px; /* Adjust font size for smaller screens */
+            font-size: 14px;
+            background-color: #0E2431; /* Adjust font size for smaller screens */
         }
     
         .aboutclass p {
@@ -533,6 +541,7 @@ top: 15px;
     font-family: 'Mooli', sans-serif;
     margin: -15px 35px;
     font-size: 1.8rem;
+    background-color: #0E2431;
 }
 
         .main-content #msg {
@@ -671,14 +680,18 @@ top: 15px;
         margin: 105px 23px;
         border-radius: 16px;
     }
-
+    #about{
+        background-color: #0E2431;
+       }
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -58px; /* Adjust margin-top for smaller screens */
+        margin-top: -58px; 
+        background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
     #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
+        background-color: #0E2431; /* Adjust font size for smaller screens */
     }
 
     .aboutclass p {
@@ -694,11 +707,13 @@ top: 15px;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 166px 35px;
+        background-color: #0E2431;
     }
     .main-content #msg {
         font-size: 25px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
+        background-color: #0E2431;
     }
      
 
@@ -819,11 +834,13 @@ top: 15px;
 
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -44px; /* Adjust margin-top for smaller screens */
+        margin-top: -44px; 
+        background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
     #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
+        background-color: #0E2431; /* Adjust font size for smaller screens */
     }
 
     .aboutclass p {
@@ -839,6 +856,7 @@ top: 15px;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 163px 35px;
+        background-color: #0E2431;
     }
     .main-content #msg {
         font-size: 26px;
@@ -891,16 +909,26 @@ top: 15px;
 
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -44px; /* Adjust margin-top for smaller screens */
+        margin-top: -44px;
+        background-color:#0E2431;/* Adjust margin-top for smaller screens */
+        z-index: 3000;
     }
 
     #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px; 
+        background-color:#0E2431;
+        z-index: 3000;
     }
 
     .aboutclass p {
         margin: 16px; /* Adjust margin for smaller screens */
     }
+    #about{
+        background-color: #0E2431;
+        z-index: 3000;
+    }
+  
+
 
     .logos img {
         width: 112px;
@@ -911,6 +939,7 @@ top: 15px;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 163px 35px;
+        background-color: #0E2431;
     }
     .main-content #msg {
         font-size: 28px;
@@ -963,11 +992,13 @@ top: 15px;
     }
 
     #about h2 {
+        background-color: #0E2431;
         font-size: 30px; /* Adjust font size for smaller screens */
         margin-top: -44px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
+        background-color: #0E2431;
         font-size: 24px; /* Adjust font size for smaller screens */
     }
 
@@ -984,6 +1015,7 @@ top: 15px;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 163px 35px;
+        background-color: #0E2431;
     }
     .main-content #msg {
         font-size: 30px;
@@ -1031,18 +1063,28 @@ top: 15px;
         margin: 90px;
         border-radius: 17px;
     }
-
+       .aboutclass{
+        background-color: #0E2431;
+       }
     #about h2 {
         font-size: 32px;
         margin-top: 44px;
+        background-color:#0E2431;
+        z-index: 3000;
+      
     }
 
     #about p {
-        font-size: 25px; /* Adjust font size for smaller screens */
+        font-size: 25px; 
+        background-color:#0E2431;
+        z-index: 3000;
+        
     }
 
     .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
+        margin: 16px; 
+        background-color:#0E2431;
+        z-index: 3000;/* Adjust margin for smaller screens */
     }
 
     .logos img {
@@ -1055,10 +1097,12 @@ top: 15px;
         font-family: 'Mooli', sans-serif;
         margin: 163px 35px;
         font:2.5rem;
+        background-color: #0E2431;
+        border-radius: 100px;
     }
    /* Footer styles for the Contact Me page */
 .main-content {
-    background: linear-gradient(90deg,#0E2431 0%,#222831 100%);
+    background-color: #0E2431;
     padding: 5px;
     text-align: center;
     position: fixed;
@@ -1106,4 +1150,157 @@ top: 15px;
    border-radius: 15px;
 }
 }
+@media only screen and (width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) { 
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        height: 0; /* Set initial height to 0 */
+        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+    }
+
+    #navbar.active {
+        height: 16vh; /* Increase the height when active */
+    }
+    nav ul li a:hover {
+        font-size: 1.01rem;
+        color: #00ADB5;
+    }
+    /* Add this CSS code to your existing styles */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    nav {
+        /* ... (your existing styles) ... */
+        animation: fadeIn 1s ease-in-out; /* Add the animation property */
+        z-index: 5000; 
+    }
+    
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+        color: #E1E8ED;
+    }
+
+    #navbar img {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+        cursor: pointer;
+    }
+   
+    .line {
+        width: 33px;
+        background-color: #00ADB5;
+        height: 4px;
+        margin: 3px 0;
+       transition: 0.3s ease-in;
+    }
+
+    .h-nav-resp {
+        height: 201px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        color: #00ADB5;
+    }
+    nav ul li a:hover {
+        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        color: #00ADB5;
+    }
+    nav img {
+        height: 20px; 
+        width: auto; 
+    }
+    .line {
+        width: 30px; 
+    }
+
+    footer.main-content {
+        padding: 10px; 
+    }
+
+    footer.main-content .flex img {
+        height: 20px; 
+        width: 19px;
+        margin: 10px 12px; 
+    }
+
+    main img {
+       
+        width: 180px;
+        margin: -361px -296px;
+    }
+    .font{
+        font-size: 1.5rem;
+    }
+    .purple{
+        font-size: 45px;
+    }
+
+    #photome img {
+        width: 236px;
+        max-width: 418px;
+        margin: 105px 23px;
+        border-radius: 16px;
+    }
+    #about{
+        background-color: #0E2431;
+       }
+    #about h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: -58px; 
+        background-color: #0E2431;/* Adjust margin-top for smaller screens */
+    }
+
+    #about p {
+        font-size: 18px;
+        background-color: #0E2431; /* Adjust font size for smaller screens */
+    }
+
+    .aboutclass p {
+        margin: 16px; /* Adjust margin for smaller screens */
+    }
+
+    .logos img {
+        width: 162px;
+        height: 68px;
+        margin: -14px 12px;
+    }
+    .leftsection {
+        color: #E1E8ED;
+        font-family: 'Mooli', sans-serif;
+        margin: 166px 35px;
+        background-color: #0E2431;
+    }
+    .main-content #msg {
+        font-size: 25px;
+        color: #00ADB5;
+        font-family: 'Noto Serif', serif;
+        background-color: #0E2431;
+    }
+     
+
+}
+
 
