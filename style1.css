@@ -663,9 +663,9 @@ top: 15px;
     }
 
     #photome img {
-        width: 214px;
+        width: 190px;
         max-width: 418px;
-        margin:108px 23px;
+        margin:150px 23px;
         border-radius: 16px;
     }
 
@@ -870,7 +870,7 @@ top: 15px;
 
     main img {
         width: 233px;
-         margin: -332px -493px;
+         margin: -332px -513px;
     }
     .font{
         font-size: 1.5rem;
