@@ -393,7 +393,7 @@ top: 15px;
     
     /* correction for media queries */
     /* iPhone SE */
-    @media (max-width: 282px) { 
+    @media (max-width: 310px) { 
         #navbar {
             flex-direction: column;
             width: 100%;
@@ -554,7 +554,7 @@ top: 15px;
 
     }
 }
-    @media (min-width: 283px) and (max-width: 481px) {
+    @media (min-width: 311px) and (max-width: 481px) {
     #navbar {
         flex-direction: column;
         width: 100%;
