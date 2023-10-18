@@ -393,7 +393,168 @@ top: 15px;
     
     /* correction for media queries */
     /* iPhone SE */
-    @media (max-width: 480px) { 
+    @media (max-width: 282px) { 
+        #navbar {
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            height: 0; /* Set initial height to 0 */
+            transition: height 0.3s ease; /* Add a smooth transition effect for height */
+        }
+    
+        #navbar.active {
+            height: 17vh; /* Increase the height when active */
+        }
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: #00ADB5;
+        }
+        /* Add this CSS code to your existing styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav {
+            /* ... (your existing styles) ... */
+            animation: fadeIn 1s ease-in-out; /* Add the animation property */
+            z-index: 5000; 
+        }
+        
+    
+        #navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #navbar ul li {
+            margin: 10px 0;
+            color: #E1E8ED;
+        }
+    
+        #navbar img {
+            display: none;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            z-index: 5000;
+            cursor: pointer;
+        }
+       
+        .line {
+            width: 33px;
+            background-color: #00ADB5;
+            height: 4px;
+            margin: 3px 0;
+           transition: 0.3s ease-in;
+        }
+    
+        .h-nav-resp {
+            height: 201px;
+        }
+    
+        .v-class-resp {
+            opacity: 0;
+            color: #00ADB5;
+        }
+        nav ul li a:hover {
+            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            color: #00ADB5;
+        }
+        nav img {
+            height: 20px; 
+            width: auto; 
+        }
+        .line {
+            width: 30px; 
+        }
+    
+        footer.main-content {
+            padding: 10px; 
+        }
+    
+        footer.main-content .flex img {
+            height: 20px; 
+            width: 19px;
+            margin: 10px 12px; 
+        }
+    
+        main img {
+           
+            width: 156px;
+            margin: -320px -219px
+        }
+        .font{
+            font-size: 1.5rem;
+        }
+        .purple{
+            font-size: 45px;
+        }
+    
+        #photome img {
+            width: 184px;
+            margin: 83px 23px;
+            border-radius: 8px;
+        }
+    
+        #about h2 {
+            font-size: 20px; /* Adjust font size for smaller screens */
+            margin-top: 64px; /* Adjust margin-top for smaller screens */
+        }
+    
+        #about p {
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
+    
+        .aboutclass p {
+            margin: 16px; /* Adjust margin for smaller screens */
+        }
+    
+        .logos img {
+            width: 96px;
+            height: 30px;
+            margin: -6px 12px;
+        }
+        .leftsection {
+            color: #E1E8ED;
+    font-family: 'Mooli', sans-serif;
+    margin: -15px 35px;
+    font-size: 1.8rem;
+}
+
+        .main-content #msg {
+            font-size: 22px;
+            color: #00ADB5;
+            font-family: 'Noto Serif', serif;
+        }
+        .secondfoot p {
+            color: #E1E8ED;
+            font-size: 12px;
+        }
+        .loading-message {
+            position: absolute;
+            bottom: 130px; /* Adjust the bottom position to control the spacing */
+            left: 60%;
+            transform: translateX(-50%);
+             color:#00ADB5;
+             font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        
+         
+
+    }
+}
+    @media (min-width: 283px) and (max-width: 481px) {
     #navbar {
         flex-direction: column;
         width: 100%;
@@ -492,7 +653,7 @@ top: 15px;
     main img {
        
         width: 180px;
-        margin: -309px -291px;
+        margin: -361px -305px
     }
     .font{
         font-size: 1.5rem;
@@ -502,15 +663,15 @@ top: 15px;
     }
 
     #photome img {
-        width: 250px;
+        width: 214px;
         max-width: 418px;
-        margin:104px 23px;
+        margin:115px 23px;
         border-radius: 16px;
     }
 
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -44px; /* Adjust margin-top for smaller screens */
+        margin-top: -58px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
@@ -524,12 +685,12 @@ top: 15px;
     .logos img {
         width: 112px;
         height: 39px;
-        margin: -9px 12px;
+        margin: -14px 12px;
     }
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 120px 35px;
+        margin: 166px 35px;
     }
     .main-content #msg {
         font-size: 25px;
@@ -709,7 +870,7 @@ top: 15px;
 
     main img {
         width: 233px;
-        margin: -353px -490px;
+         margin: -332px -493px;
     }
     .font{
         font-size: 1.5rem;
@@ -719,7 +880,7 @@ top: 15px;
     }
 
     #photome img {
-        width: 234px;
+        width: 263px;
         max-width: 400px;
         margin: 43px;
         border-radius: 16px;
