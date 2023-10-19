@@ -716,7 +716,7 @@ top: 15px;
     }
     .loading-message {
         position: absolute;
-        bottom: 130px; /* Adjust the bottom position to control the spacing */
+        bottom: 120px; /* Adjust the bottom position to control the spacing */
         left: 50%;
         transform: translateX(-50%);
          color:#00ADB5;
@@ -727,163 +727,164 @@ top: 15px;
 }
 }
     @media (min-width: 360px) and (max-width: 481px) {
-    #navbar {
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-y: auto;
-        height: 0; /* Set initial height to 0 */
-        transition: height 0.3s ease; /* Add a smooth transition effect for height */
-    }
-
-    #navbar.active {
-        height: 16vh; /* Increase the height when active */
-    }
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        color: #00ADB5;
-    }
-    /* Add this CSS code to your existing styles */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
+        #navbar {
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            height: 0; /* Set initial height to 0 */
+            transition: height 0.3s ease; /* Add a smooth transition effect for height */
         }
-        to {
-            opacity: 1;
+    
+        #navbar.active {
+            height: 16vh; /* Increase the height when active */
         }
-    }
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: #00ADB5;
+        }
+        /* Add this CSS code to your existing styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav {
+            /* ... (your existing styles) ... */
+            animation: fadeIn 1s ease-in-out; /* Add the animation property */
+            z-index: 5000; 
+        }
+        
     
-    nav {
-        /* ... (your existing styles) ... */
-        animation: fadeIn 1s ease-in-out; /* Add the animation property */
-        z-index: 5000; 
-    }
+        #navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
     
-
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navbar ul li {
-        margin: 10px 0;
-        color: #E1E8ED;
-    }
-
-    #navbar img {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        position: fixed;
-        z-index: 5000;
-        cursor: pointer;
-    }
-   
-    .line {
-        width: 33px;
-        background-color: #00ADB5;
-        height: 4px;
-        margin: 3px 0;
-       transition: 0.3s ease-in;
-    }
-
-    .h-nav-resp {
-        height: 201px;
-    }
-
-    .v-class-resp {
-        opacity: 0;
-        color: #00ADB5;
-    }
-    nav ul li a:hover {
-        font-size: 1rem; /* Adjust font size for screens up to 900px width */
-        color: #00ADB5;
-    }
-    nav img {
-        height: 20px; 
-        width: auto; 
-    }
-    .line {
-        width: 30px; 
-    }
-
-    footer.main-content {
-        padding: 10px; 
-    }
-
-    footer.main-content .flex img {
-        height: 20px; 
-        width: 19px;
-        margin: 10px 12px; 
-    }
-
-    main img {
+        #navbar ul li {
+            margin: 10px 0;
+            color: #E1E8ED;
+        }
+    
+        #navbar img {
+            display: none;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            z-index: 5000;
+            cursor: pointer;
+        }
        
-        width: 160px;
-        margin: -350px -301px;
-    }
-    .font{
-        font-size: 1.5rem;
-    }
-    .purple{
-        font-size: 45px;
-    }
-
-    #photome img {
-        width: 180px;
-        max-width: 418px;
-        margin: 95px 23px;
-        border-radius: 16px;
-    }
-    #about{
-        background-color: #0E2431;
-       }
-    #about h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -58px; 
-        background-color: #0E2431;/* Adjust margin-top for smaller screens */
-    }
-
-    #about p {
-        font-size: 18px;
-        background-color: #0E2431; /* Adjust font size for smaller screens */
-    }
-
-    .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
-    }
-
+        .line {
+            width: 33px;
+            background-color: #00ADB5;
+            height: 4px;
+            margin: 3px 0;
+           transition: 0.3s ease-in;
+        }
     
+        .h-nav-resp {
+            height: 201px;
+        }
     
+        .v-class-resp {
+            opacity: 0;
+            color: #00ADB5;
+        }
+        nav ul li a:hover {
+            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            color: #00ADB5;
+        }
+        nav img {
+            height: 20px; 
+            width: auto; 
+        }
+        .line {
+            width: 30px; 
+        }
     
-    .leftsection {
-        color: #E1E8ED;
-        font-family: 'Mooli', sans-serif;
-        margin: 166px 35px;
-        background-color: #0E2431;
+        footer.main-content {
+            padding: 10px; 
+        }
+    
+        footer.main-content .flex img {
+            height: 20px; 
+            width: 19px;
+            margin: 10px 12px; 
+        }
+    
+        main img {
+           
+            width: 160px;
+            margin: -350px -301px;
+        }
+        .font{
+            font-size: 1.5rem;
+        }
+        .purple{
+            font-size: 45px;
+        }
+    
+        #photome img {
+            width: 180px;
+            max-width: 418px;
+            margin: 95px 23px;
+            border-radius: 16px;
+        }
+        #about{
+            background-color: #0E2431;
+           }
+        #about h2 {
+            font-size: 24px; /* Adjust font size for smaller screens */
+            margin-top: -58px; 
+            background-color: #0E2431;/* Adjust margin-top for smaller screens */
+        }
+    
+        #about p {
+            font-size: 18px;
+            background-color: #0E2431; /* Adjust font size for smaller screens */
+        }
+    
+        .aboutclass p {
+            margin: 16px; /* Adjust margin for smaller screens */
+        }
+    
+        
+        
+        
+        .leftsection {
+            color: #E1E8ED;
+            font-family: 'Mooli', sans-serif;
+            margin: 166px 35px;
+            background-color: #0E2431;
+        }
+        .main-content #msg {
+            font-size: 25px;
+            color: #00ADB5;
+            font-family: 'Noto Serif', serif;
+            background-color: #0E2431;
+        }
+        .loading-message {
+            position: absolute;
+            bottom: 130px; /* Adjust the bottom position to control the spacing */
+            left: 50%;
+            transform: translateX(-50%);
+             color:#00ADB5;
+             font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+         
+    
     }
-    .main-content #msg {
-        font-size: 25px;
-        color: #00ADB5;
-        font-family: 'Noto Serif', serif;
-        background-color: #0E2431;
-    }
-    .loading-message {
-        position: absolute;
-        bottom: 130px; /* Adjust the bottom position to control the spacing */
-        left: 50%;
-        transform: translateX(-50%);
-         color:#00ADB5;
-         font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-     
-
-}
+    
     }
 @media (min-width: 481px) and (max-width: 767px) {
     #navbar {
