@@ -686,7 +686,7 @@ top: 15px;
        }
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 478px; 
+        margin-top: 324px; 
         background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
@@ -837,7 +837,7 @@ top: 15px;
         #photome img {
             width: 180px;
             max-width: 418px;
-            margin: 95px 23px;
+            margin:112px 23px;
             border-radius: 16px;
         }
         #about{
