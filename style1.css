@@ -665,8 +665,8 @@ top: 15px;
 
     main img {
        
-        width: 160px;
-        margin: -348px -239px;
+        width: 230px;
+        margin: -403px -297px;
     }
     .font{
         font-size: 1.5rem;
@@ -676,9 +676,9 @@ top: 15px;
     }
 
     #photome img {
-        width: 180px;
+        width: 275px;
         max-width: 418px;
-        margin: 260px 23px;
+        margin: 220px 23px;
         border-radius: 16px;
     }
     #about{
@@ -686,7 +686,7 @@ top: 15px;
        }
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 114px; 
+        margin-top: 478px; 
         background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
@@ -696,7 +696,7 @@ top: 15px;
     }
 
     .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
+        margin-top: 16px; /* Adjust margin for smaller screens */
     }
 
     
