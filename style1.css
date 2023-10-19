@@ -665,8 +665,8 @@ top: 15px;
 
     main img {
        
-        width: 180px;
-        margin: -361px -296px;
+        width: 160px;
+        margin: -350px -301px;
     }
     .font{
         font-size: 1.5rem;
@@ -676,7 +676,7 @@ top: 15px;
     }
 
     #photome img {
-        width: 204px;
+        width: 180px;
         max-width: 418px;
         margin: 150px 23px;
         border-radius: 16px;
@@ -700,8 +700,8 @@ top: 15px;
     }
 
     .logos img {
-        width: 162px;
-        height: 69px;
+        width: 133px;
+        height: 50px;
         margin: -23px 12px;
     }
     
@@ -718,9 +718,18 @@ top: 15px;
         font-family: 'Noto Serif', serif;
         background-color: #0E2431;
     }
+    .loading-message {
+        position: absolute;
+        bottom: 130px; /* Adjust the bottom position to control the spacing */
+        left: 50%;
+        transform: translateX(-50%);
+         color:#00ADB5;
+         font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
      
 
 }
+    }
 @media (min-width: 481px) and (max-width: 767px) {
     #navbar {
         flex-direction: column;
