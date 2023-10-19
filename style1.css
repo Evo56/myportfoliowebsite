@@ -716,11 +716,11 @@ top: 15px;
     }
     .loading-message {
         position: absolute;
-        bottom: 120px; /* Adjust the bottom position to control the spacing */
+        bottom: 50px; /* Adjust the bottom position to control the spacing */
         left: 50%;
         transform: translateX(-50%);
          color:#00ADB5;
-         font-size: 20px;
+         font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
      
 
