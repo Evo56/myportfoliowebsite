@@ -678,7 +678,7 @@ top: 15px;
     #photome img {
         width: 180px;
         max-width: 418px;
-        margin: 150px 23px;
+        margin: 206px 23px;
         border-radius: 16px;
     }
     #about{
@@ -699,11 +699,7 @@ top: 15px;
         margin: 16px; /* Adjust margin for smaller screens */
     }
 
-    .logos img {
-        width: 133px;
-        height: 50px;
-        margin: -23px 12px;
-    }
+    
     
     
     .leftsection {
