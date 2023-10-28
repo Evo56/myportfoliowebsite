@@ -151,7 +151,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 55px;
+    height: 45px;
     /* background-color: rgb(57, 62, 70); */
     background: linear-gradient(90deg,#000d14 0%,#091829 100%);
     z-index: 5000; 
