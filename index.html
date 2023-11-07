@@ -30,6 +30,7 @@
                 <ul class="navlist">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#main-content" id="contact-link">Contact Me</a></li>
                 </ul>
             </div>
@@ -76,6 +77,39 @@
           
         </main>
 
+        </section>
+        <section class="projectsclass" id="project">
+            <h2 id="pr">Projects</h2>
+            <br>
+            <div class="slider" id="slider" data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="slide">
+                    <div class="photo">
+                        <img src="pexels-beyzanur-k-18844419.jpg" alt="image 1" draggable="false">
+                    </div>
+                    <div class="text">
+                         <h2>Nepali highlands coffee</h2>
+                        <p id="coffee"> Sip the spirite of the himalayas</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo">
+                        <img src="pexels-anush-gorak-1229356.jpg" alt="image 1" draggable="false">
+                    </div>
+                    <div class="text">
+                        <h2>Total Fitness</h2>
+                        <p id="gym"> Elevate your Fitness</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo">
+                        <img src="Coming (2).png" alt="image 1" draggable="false">
+                    </div>
+                    <div class="text" id="mart">
+                        <h2>Nepa Mart</h2>
+                        <p id ="shop"> Your one stop shop for Nepalese delights</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <footer class="main-content" id="contact">
@@ -414,5 +448,46 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "retina_detect": true
   });
+  const track = document.getElementById("slider");
+
+const handleOnDown = (e) => 
+    track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+    track.dataset.mouseDownAt = "0";
+    track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = (e) => {
+    if (track.dataset.mouseDownAt === "0") return;
+
+    const mouseDelta = 
+        parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth;
+
+    const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = 
+            parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage =
+            Math.max(Math.min(nextPercentageUnconstrained, 0), -70);
+
+    track.dataset.percentage = nextPercentage;
+    
+    track.animate({
+        transform: `translateX(${nextPercentage}%)`
+    }, { duration: 1200, fill: "forwards" });
+}
+
+window.onmousedown = (e) => handleOnDown(e);
+
+window.ontouchstart = (e) => handleOnDown(e.touches[0]);
+
+window.onmouseup = (e) => handleOnUp(e);
+
+window.ontouchend = (e) => handleOnUp(e.touches[0]);
+
+window.onmousemove = (e) => handleOnMove(e);
+
+window.ontouchmove = (e) => handleOnMove(e.touches[0]);
 </script>
 </html>
