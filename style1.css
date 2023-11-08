@@ -12,7 +12,7 @@ box-sizing: border-box;
     background-size: cover;
     animation: animatecolor 4s linear infinite;
     box-sizing: border-box;
-    margin-top: 300px;
+margin-top: 300px;
 }
 
 
@@ -669,6 +669,33 @@ top: 15px;
          
 
     }
+    #pr{
+        text-align: center;
+        color: #00ADB5;
+        margin-top: -599px;
+        font-size: 24px;
+        margin-bottom: 120px;
+        font-family: 'Noto Serif', serif;
+    }
+    .text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-left: 110px;
+       
+    }
+    .slide > .text h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+        margin-right: 34px;
+        
+        
+    }
+    .slide > .text p {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        margin-left: 100px;
+    }
 }
 @media (min-width: 311px) and (max-width: 359px) {
     #navbar {
@@ -828,8 +855,46 @@ top: 15px;
      
 
 }
+#pr{
+    text-align: center;
+    color: #00ADB5;
+    margin-top: -599px;
+    font-size: 24px;
+    margin-bottom: 120px;
+    font-family: 'Noto Serif', serif;
+}
+.text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 110px;
+   
+}
+.slide > .text h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 34px;
+    
+    
+}
+.slide > .text p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-left: 100px;
+}
 }
     @media (min-width: 360px) and (max-width: 481px) {
+        .infinite{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: -22px;
+            background-color: #0E2431;
+            background-size: cover;
+            animation: animatecolor 4s linear infinite;
+            box-sizing: border-box;
+            margin-top: 250px;
+        }
         .text h2 {
             font-size: 1.8rem;
             margin-bottom: 0;
@@ -895,7 +960,7 @@ top: 15px;
         }
     
         #navbar.active {
-            height: 20vh; /* Increase the height when active */
+            height: 40vh; /* Increase the height when active */
         }
         nav ul li a:hover {
             font-size: 1.01rem;
@@ -1204,6 +1269,26 @@ top: 15px;
 }
 
     @media (min-width: 768px) and (max-width: 1023px){
+        .infinite{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: -22px;
+            background-color: #0E2431;
+            background-size: cover;
+            animation: animatecolor 4s linear infinite;
+            box-sizing: border-box;
+        margin-top: 600px;
+        }
+        .loading-message {
+            position: absolute;
+            bottom: 300px; /* Adjust the bottom position to control the spacing */
+            left: 50%;
+            transform: translateX(-50%);
+             color:#00ADB5;
+             font-size:22px;
+        font-family: 'Times New Roman', Times, serif;
+        }
         nav ul li a:hover {
             font-size: 1rem; /* Adjust font size for screens up to 900px width */
             color: #00ADB5;
@@ -1376,10 +1461,51 @@ top: 15px;
         font-size: 24px;
         margin-bottom: 120px;
     }
+    .loading-message {
+        position: absolute;
+        bottom: 100px; /* Adjust the bottom position to control the spacing */
+        left: 50%;
+        transform: translateX(-50%);
+         color:#00ADB5;
+         font-size:22px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .infinite{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: -22px;
+        background-color: #0E2431;
+        background-size: cover;
+        animation: animatecolor 4s linear infinite;
+        box-sizing: border-box;
+    margin-top: 250px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px){ 
     /* Adjust styles specifically for iPad Air */
+   
+    .infinite{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: -22px;
+        background-color: #0E2431;
+        background-size: cover;
+        animation: animatecolor 4s linear infinite;
+        box-sizing: border-box;
+    margin-top: 700px;
+    }
+    .loading-message {
+        position: absolute;
+        bottom: 300px; /* Adjust the bottom position to control the spacing */
+        left: 50%;
+        transform: translateX(-50%);
+         color:#00ADB5;
+         font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    }
     nav ul li a:hover {
         font-size: 1rem; /* Adjust font size for screens up to 900px width */
         color: #00ADB5;
