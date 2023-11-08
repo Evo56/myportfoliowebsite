@@ -407,6 +407,7 @@ top: 15px;
         margin-top: -100px;
         font-size: 32px;
         margin-bottom: 120px;
+        font-family: 'Noto Serif', serif;
     }
     .projectsclass{
         width:100%;
@@ -514,7 +515,7 @@ top: 15px;
         }
     
         #navbar.active {
-            height: 11vh; /* Increase the height when active */
+            height: 21vh; /* Increase the height when active */
         }
         nav ul li a:hover {
             font-size: 1.01rem;
@@ -831,10 +832,52 @@ top: 15px;
         .text h2 {
             font-size: 1.8rem;
             margin-bottom: 0;
+            margin-left: 110px;
+           
         }
         .slide > .text h2 {
             font-size: 1.8rem;
+            margin-top: 10px;
             margin-bottom: 0;
+            
+            
+        }
+        .slide > .text p {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            margin-left: 100px;
+        }
+        .slide{
+            width:50vw;
+            height:500px;
+            margin: 0 5vw;
+            position: relative;
+            transition:all .7s ease;
+        }
+        .slide > .photo{
+            width:inherit;
+            height: inherit;
+            transition:all 1s ease;
+        }
+        .slide > .photo > img {
+            width:80%;
+            height:80%;
+            margin-left: 20px;
+            object-fit:cover;
+        }
+        .slide>.text{
+            position:absolute;
+            bottom:20%;
+            right:-50px;
+            color:#fff;
+            transition:all .4s ease;
+        }
+        #pr {
+            text-align: center;
+            color: #00ADB5;
+            margin-top: 13px;
+            font-size: 24px;
+            margin-bottom: 120px;
         }
         
         #navbar {
@@ -851,7 +894,7 @@ top: 15px;
         }
     
         #navbar.active {
-            height: 27vh; /* Increase the height when active */
+            height: 20vh; /* Increase the height when active */
         }
         nav ul li a:hover {
             font-size: 1.01rem;
@@ -1223,6 +1266,13 @@ top: 15px;
             color: #00ADB5;
             font-family: 'Noto Serif', serif;
         }
+        #pr {
+            text-align: center;
+            color: #00ADB5;
+            margin-top: -285px;
+            font-size: 32px;
+            margin-bottom: 120px;
+        }
     }
 @media (min-width: 1024px) and (max-width: 1280px){ 
     nav ul li a:hover {
@@ -1306,8 +1356,8 @@ top: 15px;
     #pr {
         text-align: center;
         color: #00ADB5;
-        margin-top: -731px;
-        font-size: 32px;
+        margin-top: 22px;
+        font-size: 24px;
         margin-bottom: 120px;
     }
 }
