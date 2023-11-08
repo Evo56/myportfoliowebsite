@@ -828,6 +828,15 @@ top: 15px;
 }
 }
     @media (min-width: 360px) and (max-width: 481px) {
+        .text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        .slide > .text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        
         #navbar {
             flex-direction: column;
             width: 100%;
@@ -838,10 +847,11 @@ top: 15px;
             overflow-y: auto;
             height: 0; /* Set initial height to 0 */
             transition: height 0.3s ease; /* Add a smooth transition effect for height */
+            text-align: center;
         }
     
         #navbar.active {
-            height: 16vh; /* Increase the height when active */
+            height: 27vh; /* Increase the height when active */
         }
         nav ul li a:hover {
             font-size: 1.01rem;
@@ -1293,6 +1303,13 @@ top: 15px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
+    #pr {
+        text-align: center;
+        color: #00ADB5;
+        margin-top: -731px;
+        font-size: 32px;
+        margin-bottom: 120px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px){ 
@@ -1369,6 +1386,7 @@ top: 15px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
+    
 }
 @media (min-width: 1281px) { 
     
