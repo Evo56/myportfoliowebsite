@@ -7,11 +7,12 @@ box-sizing: border-box;
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: -22px;
     background-color: #0E2431;
     background-size: cover;
     animation: animatecolor 4s linear infinite;
     box-sizing: border-box;
+    margin-top: 350px;
 }
 
 
@@ -1185,6 +1186,21 @@ top: 15px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
+    #pr {
+        text-align: center;
+        color: #00ADB5;
+        margin-top: 12px;
+        font-size: 32px;
+        margin-bottom: 120px;
+        font-family: 'Noto Serif', serif;
+    }
+    .slide > .text h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    
 }
 
     @media (min-width: 768px) and (max-width: 1023px){
