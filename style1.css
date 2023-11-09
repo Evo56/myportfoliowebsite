@@ -673,7 +673,7 @@ top: 15px;
     #pr{
         text-align: center;
         color: #00ADB5;
-        margin-top: -599px;
+        margin-top: 67px;
         font-size: 24px;
         margin-bottom: 120px;
         font-family: 'Noto Serif', serif;
@@ -859,7 +859,7 @@ top: 15px;
 #pr{
     text-align: center;
     color: #00ADB5;
-    margin-top: -599px;
+    margin-top: 20px;
     font-size: 24px;
     margin-bottom: 120px;
     font-family: 'Noto Serif', serif;
@@ -1374,7 +1374,7 @@ top: 15px;
         #pr {
             text-align: center;
             color: #00ADB5;
-            margin-top: -285px;
+            margin-top: 60px;
             font-size: 32px;
             margin-bottom: 120px;
         }
@@ -1582,10 +1582,22 @@ top: 15px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
-    
+    #pr {
+        text-align: center;
+        color: #00ADB5;
+        margin-top: 60px;
+        font-size: 32px;
+        margin-bottom: 120px;
+    }
 }
 @media (min-width: 1281px) { 
-    
+    #pr {
+        text-align: center;
+        color: #00ADB5;
+        margin-top: 50px;
+        font-size: 32px;
+        margin-bottom: 120px;
+    }
     nav ul li a:hover {
         font-size: 1rem; /* Adjust font size for screens up to 900px width */
         color: #00ADB5;
