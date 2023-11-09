@@ -444,6 +444,7 @@ top: 15px;
         width:80%;
         height:80%;
         object-fit:cover;
+        border-radius: 16px;
     }
     .slide>.text{
         position:absolute;
@@ -930,6 +931,7 @@ top: 15px;
             height:80%;
             margin-left: 20px;
             object-fit:cover;
+            border-radius: 16px;
         }
         .slide>.text{
             position:absolute;
@@ -1273,12 +1275,12 @@ top: 15px;
             display:flex;
             justify-content: center;
             align-items: center;
-            min-height: -22px;
+            min-height: -800px;
             background-color: #0E2431;
             background-size: cover;
             animation: animatecolor 4s linear infinite;
             box-sizing: border-box;
-        margin-top: 600px;
+        margin-top: 400px;
         }
         .loading-message {
             position: absolute;
@@ -1337,6 +1339,8 @@ top: 15px;
     
         #about p {
             font-size: 18px; 
+            background-color: solid #0E2431;
+            z-index: 8000;
           
         }
     
