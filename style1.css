@@ -894,7 +894,7 @@ top: 15px;
             background-size: cover;
             animation: animatecolor 4s linear infinite;
             box-sizing: border-box;
-            margin-top: 350px;
+            margin-top: 250px;
         }
         .text h2 {
             font-size: 1.8rem;
@@ -1499,7 +1499,7 @@ top: 15px;
         background-size: cover;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
-    margin-top: 700px;
+    margin-top: 400px;
     }
     .loading-message {
         position: absolute;
