@@ -589,7 +589,7 @@ top: 15px;
         main img {
            
             width: 156px;
-            margin: -320px -219px
+            margin: -320px -235px
         }
         .font{
             font-size: 1.5rem;
@@ -692,7 +692,7 @@ top: 15px;
         background-size: cover;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
-      margin-top: 200px;
+      margin-top: 230px;
     }
 }
 @media (min-width: 311px) and (max-width: 375px) {
@@ -915,7 +915,7 @@ top: 15px;
             background-size: cover;
             animation: animatecolor 4s linear infinite;
             box-sizing: border-box;
-            margin-top: 300px;
+            margin-top: 330px;
         }
         .text h2 {
             font-size: 1.8rem;
@@ -1049,7 +1049,7 @@ top: 15px;
     
         main img {
             width: 309px;
-            margin: -505px -371px;
+            margin: -505px -356px;
         }
         
         .font{
