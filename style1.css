@@ -152,7 +152,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 45px;
+    height: 50px;
     /* background-color: rgb(57, 62, 70); */
     background: linear-gradient(90deg,#000d14 0%,#091829 100%);
     z-index: 5000; 
@@ -179,6 +179,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #E1E8ED;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -441,9 +442,9 @@ top: 15px;
         transition:all 1s ease;
     }
     .slide > .photo > img {
-        width:80%;
-        height:80%;
-        object-fit:cover;
+        width: 70%;
+        height: 150%;
+        object-fit: cover;
         border-radius: 16px;
     }
     .slide>.text{
@@ -455,11 +456,11 @@ top: 15px;
     }
     .slide > .text h2{
         font-size: 4rem;
-        margin-bottom: 0;
+        margin-bottom: -127px;
     }
-    .slide > .text p{
+    .slide > .text p {
         font-size: 1.3rem;
-        margin-top:.5rem;
+        margin-top: 8rem;
     }
     /* slide numbers */
     .slide .photo::before{
@@ -502,88 +503,74 @@ top: 15px;
     
     
     /* correction for media queries */
-    /* iPhone SE */
+   
     @media (max-width: 310px) { 
         #navbar {
             flex-direction: column;
-            width: 100%;
+            width: 0;
             background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
+            right: 0;
             overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
+            transition: width 0.3s ease;
+            position: fixed;
+            text-decoration: underline;
+            display: flex; /* Add display: flex */
+            align-items: center; /* Center align the content vertically */
+            justify-content: center; /* Center align the content horizontally */
         }
-    
+        
         #navbar.active {
-            height: 21vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            width: 80vw;
+            height: 100vh; /* Set height to 100vh to cover the entire viewport */
         }
         
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
-    
         #navbar ul {
             flex-direction: column;
             align-items: center;
+            font-size: 15px;
         }
-    
+        
         #navbar ul li {
             margin: 10px 0;
             color: #E1E8ED;
         }
-    
-        #navbar img {
-            display: none;
-        }
-    
+        
         .burger {
             display: block;
-            position: fixed;
             z-index: 5000;
             cursor: pointer;
+            top: 10px;
+            right: 10px;
+            position: fixed;
         }
-       
+        
         .line {
             width: 33px;
             background-color: #00ADB5;
             height: 4px;
             margin: 3px 0;
-           transition: 0.3s ease-in;
+            transition: 0.3s ease-in;
+            transform-origin: 0 0;
         }
-    
+        
         .h-nav-resp {
             height: 201px;
         }
-    
+        
         .v-class-resp {
             opacity: 0;
             color: #00ADB5;
         }
+        
         nav ul li a:hover {
-            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            font-size: 1rem;
             color: #00ADB5;
         }
+        
         nav img {
-            height: 20px; 
-            width: auto; 
+            height: 25px;
+            width: auto;
+            display: none;
         }
         .line {
             width: 30px; 
@@ -608,7 +595,7 @@ top: 15px;
             font-size: 1.5rem;
         }
         .purple{
-            font-size: 45px;
+            font-size: 40px;
         }
     
         #photome img {
@@ -622,7 +609,7 @@ top: 15px;
     
         #about h2 {
             font-size: 20px; /* Adjust font size for smaller screens */
-            margin-top: 64px; 
+            margin-top: 300px; 
             background-color: #0E2431;/* Adjust margin-top for smaller screens */
         }
     
@@ -644,7 +631,7 @@ top: 15px;
             color: #E1E8ED;
     font-family: 'Mooli', sans-serif;
     margin: -15px 35px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: #0E2431;
     border-radius: 20px;
 }
@@ -697,93 +684,95 @@ top: 15px;
         margin-top: 0.5rem;
         margin-left: 100px;
     }
+    .infinite{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0E2431;
+        background-size: cover;
+        animation: animatecolor 4s linear infinite;
+        box-sizing: border-box;
+      margin-top: 200px;
+    }
 }
-@media (min-width: 311px) and (max-width: 359px) {
+@media (min-width: 311px) and (max-width: 375px) {
+    .infinite{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0E2431;
+        background-size: cover;
+        animation: animatecolor 4s linear infinite;
+        box-sizing: border-box;
+        margin-top: 250px;
+    }
     #navbar {
         flex-direction: column;
-        width: 100%;
+        width: 0;
         background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
+        right: 0;
         overflow-y: auto;
-        height: 0; /* Set initial height to 0 */
-        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+        transition: width 0.3s ease;
+        position: fixed;
+        text-decoration: underline;
+        display: flex; /* Add display: flex */
+        align-items: center; /* Center align the content vertically */
+        justify-content: center; /* Center align the content horizontally */
     }
-
+    
     #navbar.active {
-        height: 17vh; /* Increase the height when active */
-    }
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        color: #00ADB5;
-    }
-    /* Add this CSS code to your existing styles */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+        width: 80vw;
+        height: 100vh; /* Set height to 100vh to cover the entire viewport */
     }
     
-    nav {
-        /* ... (your existing styles) ... */
-        animation: fadeIn 1s ease-in-out; /* Add the animation property */
-        z-index: 5000; 
-    }
-    
-
     #navbar ul {
         flex-direction: column;
         align-items: center;
+        font-size: 18px;
     }
-
+    
     #navbar ul li {
         margin: 10px 0;
         color: #E1E8ED;
     }
-
-    #navbar img {
-        display: none;
-    }
-
+    
     .burger {
         display: block;
-        position: fixed;
         z-index: 5000;
         cursor: pointer;
+        top: 10px;
+        right: 10px;
+        position: fixed;
     }
-   
+    
     .line {
         width: 33px;
         background-color: #00ADB5;
         height: 4px;
         margin: 3px 0;
-       transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+        transform-origin: 0 0;
     }
-
+    
     .h-nav-resp {
         height: 201px;
     }
-
+    
     .v-class-resp {
         opacity: 0;
         color: #00ADB5;
     }
+    
     nav ul li a:hover {
-        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        font-size: 1rem;
         color: #00ADB5;
     }
+    
     nav img {
-        height: 20px; 
-        width: auto; 
+        height: 25px;
+        width: auto;
+        display: none;
     }
-    .line {
-        width: 30px; 
-    }
-
     footer.main-content {
         padding: 10px; 
     }
@@ -797,7 +786,7 @@ top: 15px;
     main img {
        
         width: 230px;
-        margin: -403px -279px;;
+        margin: -403px -304px;;
     }
     .font{
         font-size: 1.5rem;
@@ -817,7 +806,7 @@ top: 15px;
        }
     #about h2 {
         font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: 324px; 
+        margin-top: 504px; 
         background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
@@ -836,7 +825,7 @@ top: 15px;
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 1px 35px;
+        margin: -62px 35px;
         background-color: #0E2431;
     }
     .main-content #msg {
@@ -865,16 +854,15 @@ top: 15px;
     font-family: 'Noto Serif', serif;
 }
 .text h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 0;
     margin-left: 110px;
    
 }
 .slide > .text h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-top: 5px;
     margin-bottom: 0;
-    margin-right: 34px;
     
     
 }
@@ -883,18 +871,51 @@ top: 15px;
     margin-top: 0.5rem;
     margin-left: 100px;
 }
+.slide{
+    width:50vw;
+    height:500px;
+    margin: 0 5vw;
+    position: relative;
+    transition:all .7s ease;
 }
-    @media (min-width: 360px) and (max-width: 481px) {
+.slide > .photo{
+    width:inherit;
+    height: inherit;
+    transition:all 1s ease;
+}
+.slide > .photo > img {
+    width:80%;
+    height:80%;
+    margin-left: 20px;
+    object-fit:cover;
+    border-radius: 16px;
+}
+.slide>.text{
+    position:absolute;
+    bottom:4%;
+    right:-50px;
+    color:#fff;
+    transition:all .4s ease;
+}
+#pr {
+    text-align: center;
+    color: #00ADB5;
+    margin-top: -6px;
+    font-size: 24px;
+    margin-bottom: 120px;
+}
+
+}
+    @media (min-width: 376px) and (max-width: 481px) {
         .infinite{
             display:flex;
             justify-content: center;
             align-items: center;
-            min-height: -1000px;
             background-color: #0E2431;
             background-size: cover;
             animation: animatecolor 4s linear infinite;
             box-sizing: border-box;
-            margin-top: 250px;
+            margin-top: 350px;
         }
         .text h2 {
             font-size: 1.8rem;
@@ -935,7 +956,7 @@ top: 15px;
         }
         .slide>.text{
             position:absolute;
-            bottom:20%;
+            bottom:4%;
             right:-50px;
             color:#fff;
             transition:all .4s ease;
@@ -950,88 +971,70 @@ top: 15px;
         
         #navbar {
             flex-direction: column;
-            width: 100%;
+            width: 0;
             background-color: #333;
-            position: fixed;
-            top: 0;
-            left: 0;
+            right: 0;
             overflow-y: auto;
-            height: 0; /* Set initial height to 0 */
-            transition: height 0.3s ease; /* Add a smooth transition effect for height */
-            text-align: center;
+            transition: width 0.3s ease;
+            position: fixed;
+            text-decoration: underline;
+            display: flex; /* Add display: flex */
+            align-items: center; /* Center align the content vertically */
+            justify-content: center; /* Center align the content horizontally */
         }
-    
+        
         #navbar.active {
-            height: 17vh; /* Increase the height when active */
-        }
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            color: #00ADB5;
-        }
-        /* Add this CSS code to your existing styles */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            width: 80vw;
+            height: 100vh; /* Set height to 100vh to cover the entire viewport */
         }
         
-        nav {
-            /* ... (your existing styles) ... */
-            animation: fadeIn 1s ease-in-out; /* Add the animation property */
-            z-index: 5000; 
-        }
-        
-    
         #navbar ul {
             flex-direction: column;
             align-items: center;
+            font-size: 25px;
         }
-    
+        
         #navbar ul li {
             margin: 10px 0;
             color: #E1E8ED;
         }
-    
-        #navbar img {
-            display: none;
-        }
-    
+        
         .burger {
             display: block;
-            position: fixed;
             z-index: 5000;
             cursor: pointer;
+            top: 10px;
+            right: 10px;
+            position: fixed;
         }
-       
+        
         .line {
             width: 33px;
             background-color: #00ADB5;
             height: 4px;
             margin: 3px 0;
-           transition: 0.3s ease-in;
+            transition: 0.3s ease-in;
+            transform-origin: 0 0;
         }
-    
+        
         .h-nav-resp {
             height: 201px;
         }
-    
+        
         .v-class-resp {
             opacity: 0;
             color: #00ADB5;
         }
+        
         nav ul li a:hover {
-            font-size: 1rem; /* Adjust font size for screens up to 900px width */
+            font-size: 1rem;
             color: #00ADB5;
         }
+        
         nav img {
-            height: 20px; 
-            width: auto; 
-        }
-        .line {
-            width: 30px; 
+            height: 25px;
+            width: auto;
+            display: none;
         }
     
         footer.main-content {
@@ -1039,40 +1042,40 @@ top: 15px;
         }
     
         footer.main-content .flex img {
-            height: 20px; 
-            width: 19px;
+            height: 25px; 
+            width: 24px;
             margin: 10px 12px; 
         }
     
         main img {
-           
-            width: 160px;
-            margin: -350px -301px;
+            width: 309px;
+            margin: -505px -371px;
         }
+        
         .font{
-            font-size: 1.5rem;
+            font-size: 2.3rem;
         }
         .purple{
-            font-size: 45px;
+            font-size: 48px;
         }
     
         #photome img {
-            width: 180px;
+            width: 315px;
             max-width: 418px;
-            margin:112px 23px;
+            margin: 268px 23px;
             border-radius: 16px;
         }
         #about{
             background-color: #0E2431;
            }
         #about h2 {
-            font-size: 24px; /* Adjust font size for smaller screens */
-            margin-top: -58px; 
+            font-size: 35px; /* Adjust font size for smaller screens */
+            margin-top: 509px; 
             background-color: #0E2431;/* Adjust margin-top for smaller screens */
         }
     
         #about p {
-            font-size: 18px;
+            font-size: 23px;
             background-color: #0E2431; /* Adjust font size for smaller screens */
         }
     
@@ -1086,11 +1089,12 @@ top: 15px;
         .leftsection {
             color: #E1E8ED;
             font-family: 'Mooli', sans-serif;
-            margin: 166px 35px;
+            margin: -37px 35px;
             background-color: #0E2431;
+            font-size: 2.3rem;
         }
         .main-content #msg {
-            font-size: 25px;
+            font-size: 30px;
             color: #00ADB5;
             font-family: 'Noto Serif', serif;
             background-color: #0E2431;
@@ -1106,90 +1110,101 @@ top: 15px;
          
     
     }
-    
+    .secondfoot p {
+        color: #E1E8ED;
+        font-size: 20px;
     }
+}
+    
 @media (min-width: 481px) and (max-width: 767px) {
+    .infinite{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: -800px;
+        background-color: #0E2431;
+        background-size: cover;
+        animation: animatecolor 4s linear infinite;
+        box-sizing: border-box;
+    margin-top: 550px;
+    }
+    .loading-message {
+        position: absolute;
+        bottom: 350px; /* Adjust the bottom position to control the spacing */
+        left: 50%;
+        transform: translateX(-50%);
+         color:#00ADB5;
+         font-size:22px;
+    font-family: 'Times New Roman', Times, serif;
+    }
     #navbar {
         flex-direction: column;
-        width: 100%;
+        width: 0;
         background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
+        right: 0;
         overflow-y: auto;
-        height: 0; /* Set initial height to 0 */
-        transition: height 0.3s ease; /* Add a smooth transition effect for height */
+        transition: width 0.3s ease;
+        position: fixed;
+        text-decoration: underline;
+        display: flex; /* Add display: flex */
+        align-items: center; /* Center align the content vertically */
+        justify-content: center; /* Center align the content horizontally */
     }
-
+    
     #navbar.active {
-        height: 15vh; /* Increase the height when active */
-    }
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        color: #00ADB5;
-    }
-    /* Add this CSS code to your existing styles */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+        width: 80vw;
+        height: 100vh; /* Set height to 100vh to cover the entire viewport */
     }
     
-    nav {
-        /* ... (your existing styles) ... */
-        animation: fadeIn 1s ease-in-out; /* Add the animation property */
-        z-index: 5000; 
-    }
-    
-
     #navbar ul {
         flex-direction: column;
         align-items: center;
+        font-size: 30px;
     }
-
+    
     #navbar ul li {
         margin: 10px 0;
         color: #E1E8ED;
     }
-
-    #navbar img {
-        display: none;
-    }
-
+    
     .burger {
         display: block;
-        position: fixed;
         z-index: 5000;
         cursor: pointer;
+        top: 10px;
+        right: 10px;
+        position: fixed;
     }
-   
+    
     .line {
         width: 33px;
         background-color: #00ADB5;
         height: 4px;
         margin: 3px 0;
-       transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+        transform-origin: 0 0;
     }
-
+    
     .h-nav-resp {
         height: 201px;
     }
-
+    
     .v-class-resp {
         opacity: 0;
         color: #00ADB5;
     }
+    
     nav ul li a:hover {
-        font-size: 1rem; /* Adjust font size for screens up to 900px width */
+        font-size: 1rem;
         color: #00ADB5;
     }
+    
     nav img {
-        height: 20px; 
-        width: auto; 
+        height: 20px;
+        width: auto;
+        display: none;
     }
+    
     .line {
         width: 30px; 
     }
@@ -1199,37 +1214,42 @@ top: 15px;
     }
 
     footer.main-content .flex img {
-        height: 22px; 
-        width: 21px;
+        height: 42px; 
+        width: 41px;
         margin: 10px 12px; 
     }
 
     main img {
-        width: 195px;
-        margin: -352px -438px;
+        width: 473px;
+        height: 345px;
+        margin: -712px -619px;
+    }
+    .secondfoot p {
+        font-size: 22px;
+        color: #E1E8ED;
     }
     .font{
-        font-size: 1.5rem;
+        font-size: 4.5rem;
     }
     .purple{
-        font-size: 45px;
+        font-size: 70px;
     }
 
     #photome img {
-        width: 234px;
-        max-width: 400px;
-        margin: 50px;
+        width: 473px;
+        height: 345px;
+        margin: 396px;
         border-radius: 16px;
     }
 
     #about h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -44px; 
+        font-size: 50px; /* Adjust font size for smaller screens */
+        margin-top: 726px; 
         background-color: #0E2431;/* Adjust margin-top for smaller screens */
     }
 
     #about p {
-        font-size: 18px;
+        font-size: 32px;
         background-color: #0E2431; /* Adjust font size for smaller screens */
     }
 
@@ -1245,11 +1265,12 @@ top: 15px;
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 163px 35px;
+        margin: 41px 35px;
         background-color: #0E2431;
+        font-size: 4.5rem;
     }
     .main-content #msg {
-        font-size: 26px;
+        font-size: 42px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
@@ -1314,31 +1335,31 @@ top: 15px;
         }
     
         main img {
-            width: 233px;
-            margin: -332px -483px;
+            width: 352px;
+            margin: -456px -529px;
         }
         .font{
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         .purple{
             font-size: 45px;
         }
     
         #photome img {
-            width: 263px;
+            width: 360px;
             max-width: 400px;
-            margin: 43px;
+            margin: 134px;
             border-radius: 16px;
         }
     
         #about h2 {
-            font-size: 24px; /* Adjust font size for smaller screens */
-            margin-top: -44px;
+            font-size: 30px; /* Adjust font size for smaller screens */
+            margin-top: 317px;
          
         }
     
         #about p {
-            font-size: 18px; 
+            font-size: 25px; 
             background-color: solid #0E2431;
             z-index: 8000;
           
@@ -1363,7 +1384,7 @@ top: 15px;
         .leftsection {
             color: #E1E8ED;
             font-family: 'Mooli', sans-serif;
-            margin: 163px 35px;
+            margin: 223px 35px;
             background-color: #0E2431;
         }
         .main-content #msg {
@@ -1494,12 +1515,12 @@ top: 15px;
         display:flex;
         justify-content: center;
         align-items: center;
-        min-height: -22px;
+        min-height: -80px;
         background-color: #0E2431;
         background-size: cover;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
-    margin-top: 400px;
+    margin-top: 700px;
     }
     .loading-message {
         position: absolute;
@@ -1507,7 +1528,7 @@ top: 15px;
         left: 50%;
         transform: translateX(-50%);
          color:#00ADB5;
-         font-size: 22px;
+         font-size: 27px;
     font-family: 'Times New Roman', Times, serif;
     }
     nav ul li a:hover {
@@ -1528,38 +1549,37 @@ top: 15px;
     }
 
     footer.main-content .flex img {
-        height: 30px; 
-        width: 29px;
+        height: 40px; 
+        width: 39px;
         margin: 10px 12px; 
     }
 
     main img {
-        width: 302px;
-        margin: -376px -617px;
+        width: 541px;
+        margin: -730px -803px;
     }
     .font{
-        font-size: 1.5rem;
+        font-size: 3.5rem;
     }
     .purple{
-        font-size: 45px;
+        font-size: 80px;
     }
 
     #photome img {
-        width: 360px;
-        max-width: 400px;
-        margin: 145px;
+        width: 661px;
+        margin: 327px;
         border-radius: 16px;
     }
 
     #about h2 {
        
-        font-size: 30px; /* Adjust font size for smaller screens */
-        margin-top: -44px; /* Adjust margin-top for smaller screens */
+        font-size: 50px; /* Adjust font size for smaller screens */
+        margin-top: 128px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
        
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 40px; /* Adjust font size for smaller screens */
     }
 
     .aboutclass p {
@@ -1574,13 +1594,18 @@ top: 15px;
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 163px 35px;
+        margin: 459px 35px;
         background-color: #0E2431;
+        font-size: 3rem;
     }
     .main-content #msg {
-        font-size: 30px;
+        font-size: 50px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
+    }
+    .secondfoot p {
+        color: #E1E8ED;
+        font-size: 30px;
     }
     #pr {
         text-align: center;
@@ -1621,18 +1646,19 @@ top: 15px;
     }
 
     main img {
-        width: 409px;
-        margin: 115px -132px;
+        width: 480px;
+        height: 362px;
+        margin: -225px 41px
     }
     .font{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     .purple{
-        font-size: 45px;
+        font-size: 70px;
     }
 
     #photome img {
-        width: 345px;
+        width: 415px;
         margin: 90px;
         border-radius: 17px;
     }
@@ -1640,15 +1666,15 @@ top: 15px;
         background-color: #0E2431;
        }
     #about h2 {
-        font-size: 32px;
-        margin-top: 44px;
+        font-size: 40px;
+        margin-top: -106px;
         background-color:#0E2431;
         z-index: 3000;
       
     }
 
     #about p {
-        font-size: 25px; 
+        font-size: 30px; 
         background-color:#0E2431;
         z-index: 3000;
         
@@ -1669,7 +1695,7 @@ top: 15px;
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
         margin: 163px 35px;
-        font:2.5rem;
+        font:500px;
         background-color: #0E2431;
         border-radius: 100px;
     }
