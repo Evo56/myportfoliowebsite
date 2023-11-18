@@ -704,7 +704,7 @@ top: 15px;
         background-size: cover;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
-        margin-top: 250px;
+        margin-top: 230px;
     }
     #navbar {
         flex-direction: column;
@@ -861,7 +861,7 @@ top: 15px;
 }
 .slide > .text h2 {
     font-size: 1.4rem;
-    margin-top: 5px;
+    margin-top: -210px;
     margin-bottom: 0;
     
     
@@ -925,14 +925,14 @@ top: 15px;
         }
         .slide > .text h2 {
             font-size: 1.8rem;
-            margin-top: 10px;
+            margin-top: -73px;
             margin-bottom: 0;
             
             
         }
         .slide > .text p {
             font-size: 1.3rem;
-            margin-top: 0.5rem;
+            margin-top: 0.3000000000000007rem;
             margin-left: 100px;
         }
         .slide{
