@@ -457,10 +457,12 @@ top: 15px;
     .slide > .text h2{
         font-size: 4rem;
         margin-bottom: -127px;
+        z-index: 5000;
     }
     .slide > .text p {
         font-size: 1.3rem;
         margin-top: 8rem;
+        z-index: 5000;
     }
     /* slide numbers */
     .slide .photo::before{
@@ -497,6 +499,10 @@ top: 15px;
     }
     .slider:active .slide .text{
     transform: translateX(-40%);
+    }
+    .coffeweb{
+        text-decoration: none;
+        color: #E1E8ED;
     }
    
     
@@ -861,7 +867,7 @@ top: 15px;
 }
 .slide > .text h2 {
     font-size: 1.4rem;
-    margin-top: -210px;
+    margin-top: -180px;
     margin-bottom: 0;
     
     
