@@ -1296,6 +1296,51 @@ top: 15px;
         margin-top: 10px;
         margin-bottom: 0;
     }
+    .text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-left: 110px;
+       
+    }
+    .slide > .text h2 {
+        font-size: 1.8rem;
+        margin-top: -73px;
+        margin-bottom: 0;
+        
+        
+    }
+    .slide > .text p {
+        font-size: 1.3rem;
+        margin-top: 0.3000000000000007rem;
+        margin-left: 100px;
+    }
+    .slide{
+        width:50vw;
+        height:500px;
+        margin: 0 5vw;
+        position: relative;
+        transition:all .7s ease;
+    }
+    .slide > .photo{
+        width:inherit;
+        height: inherit;
+        transition:all 1s ease;
+    }
+    .slide > .photo > img {
+        width:80%;
+        height:100%;
+        margin-left: 20px;
+        object-fit:cover;
+        border-radius: 16px;
+        margin:12px 32px;
+    }
+    .slide>.text{
+        position:absolute;
+        bottom:4%;
+        right:-50px;
+        color:#fff;
+        transition:all .4s ease;
+    }
     
     
 }
@@ -1408,6 +1453,50 @@ top: 15px;
             font-size: 32px;
             margin-bottom: 120px;
         }
+        .text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            margin-left: 110px;
+           
+        }
+        .slide > .text h2 {
+            font-size: 1.8rem;
+            margin-top: -73px;
+            margin-bottom: 0;
+            
+            
+        }
+        .slide > .text p {
+            font-size: 1.3rem;
+            margin-top: 0.3000000000000007rem;
+            margin-left: 100px;
+        }
+        .slide{
+            width:50vw;
+            height:500px;
+            margin: 0 5vw;
+            position: relative;
+            transition:all .7s ease;
+        }
+        .slide > .photo{
+            width:inherit;
+            height: inherit;
+            transition:all 1s ease;
+        }
+        .slide > .photo > img {
+            width:80%;
+            height:80%;
+            margin-left: 20px;
+            object-fit:cover;
+            border-radius: 16px;
+        }
+        .slide>.text{
+            position:absolute;
+            bottom:4%;
+            right:-50px;
+            color:#fff;
+            transition:all .4s ease;
+        }
     }
 @media (min-width: 1024px) and (max-width: 1280px){ 
     nav ul li a:hover {
@@ -1514,6 +1603,51 @@ top: 15px;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
     margin-top: 250px;
+    }
+    .text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-left: 110px;
+       
+    }
+    .slide > .text h2 {
+        font-size: 1.8rem;
+        margin-top: -73px;
+        margin-bottom: 0;
+        
+        
+    }
+    .slide > .text p {
+        font-size: 1.3rem;
+        margin-top: 0.3000000000000007rem;
+        margin-left: 100px;
+    }
+    .slide{
+        width:50vw;
+        height:500px;
+        margin: 0 5vw;
+        position: relative;
+        transition:all .7s ease;
+    }
+    .slide > .photo{
+        width:inherit;
+        height: inherit;
+        transition:all 1s ease;
+    }
+    .slide > .photo > img {
+        width:100%;
+        height:120%;
+        margin-left: 20px;
+        object-fit:cover;
+        border-radius: 16px;
+        margin: 12px 32px;
+    }
+    .slide>.text{
+        position:absolute;
+        bottom:4%;
+        right:-50px;
+        color:#fff;
+        transition:all .4s ease;
     }
 }
 
