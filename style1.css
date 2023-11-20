@@ -1612,7 +1612,7 @@ top: 15px;
     }
     .slide > .text h2 {
         font-size: 1.8rem;
-        margin-top: -73px;
+        margin-top: -220px;
         margin-bottom: 0;
         
         
@@ -1635,12 +1635,12 @@ top: 15px;
         transition:all 1s ease;
     }
     .slide > .photo > img {
-        width:100%;
+        width:80%;
         height:120%;
         margin-left: 20px;
         object-fit:cover;
         border-radius: 16px;
-        margin: 12px 32px;
+        margin: -169px 32px;
     }
     .slide>.text{
         position:absolute;
