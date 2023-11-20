@@ -500,10 +500,13 @@ top: 15px;
     .slider:active .slide .text{
     transform: translateX(-40%);
     }
-    .coffeweb{
-        text-decoration: none;
-        color: #E1E8ED;
-    }
+   #linkphoto{
+    margin: 12px 107px;
+    width: 44px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+   }
    
     
     
