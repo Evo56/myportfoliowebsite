@@ -674,25 +674,8 @@ top: 15px;
         margin-bottom: 120px;
         font-family: 'Noto Serif', serif;
     }
-    .text h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0;
-        margin-left: 110px;
-       
-    }
-    .slide > .text h2 {
-        font-size: 1.5rem;
-        margin-top: 10px;
-        margin-bottom: 0;
-        margin-right: 34px;
-        
-        
-    }
-    .slide > .text p {
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
-        margin-left: 100px;
-    }
+    
+    
     .infinite{
         display:flex;
         justify-content: center;
@@ -702,6 +685,50 @@ top: 15px;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
       margin-top: 230px;
+    }
+    .text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-left: 110px;
+       
+    }
+    .slide > .text h2 {
+        font-size: 1.4rem;
+        margin-top: -310px;
+        margin-bottom: 0;
+        
+        
+    }
+    .slide > .text p {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        margin-left: 100px;
+    }
+    .slide{
+        width:50vw;
+        height:500px;
+        margin: 0 5vw;
+        position: relative;
+        transition:all .7s ease;
+    }
+    .slide > .photo{
+        width:inherit;
+        height: inherit;
+        transition:all 1s ease;
+    }
+    .slide > .photo > img {
+        width:80%;
+        height:80%;
+        margin-left: 30px;
+        object-fit:cover;
+        border-radius: 16px;
+    }
+    .slide>.text{
+        position:absolute;
+        bottom:4%;
+        right:-50px;
+        color:#fff;
+        transition:all .4s ease;
     }
 }
 @media (min-width: 311px) and (max-width: 375px) {
