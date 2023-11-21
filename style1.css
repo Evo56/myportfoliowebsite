@@ -507,6 +507,15 @@ top: 15px;
     border: none;
     cursor: pointer;
    }
+   a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline if desired */
+}
+
+/* Style the link when hovered over */
+a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
    
     
     
@@ -522,7 +531,7 @@ top: 15px;
             overflow-y: auto;
             transition: width 0.3s ease;
             position: fixed;
-            text-decoration: underline;
+            text-decoration: wavy;
             display: flex; /* Add display: flex */
             align-items: center; /* Center align the content vertically */
             justify-content: center; /* Center align the content horizontally */
@@ -750,7 +759,7 @@ top: 15px;
         overflow-y: auto;
         transition: width 0.3s ease;
         position: fixed;
-        text-decoration: underline;
+        text-decoration: wavy;
         display: flex; /* Add display: flex */
         align-items: center; /* Center align the content vertically */
         justify-content: center; /* Center align the content horizontally */
@@ -1013,7 +1022,7 @@ top: 15px;
             overflow-y: auto;
             transition: width 0.3s ease;
             position: fixed;
-            text-decoration: underline;
+            text-decoration: wavy;
             display: flex; /* Add display: flex */
             align-items: center; /* Center align the content vertically */
             justify-content: center; /* Center align the content horizontally */
@@ -1181,7 +1190,7 @@ top: 15px;
         overflow-y: auto;
         transition: width 0.3s ease;
         position: fixed;
-        text-decoration: underline;
+        text-decoration: wavy;
         display: flex; /* Add display: flex */
         align-items: center; /* Center align the content vertically */
         justify-content: center; /* Center align the content horizontally */
@@ -1525,161 +1534,9 @@ top: 15px;
             transition:all .4s ease;
         }
     }
+
+
 @media (min-width: 1024px) and (max-width: 1280px){ 
-    nav ul li a:hover {
-        font-size: 1rem; /* Adjust font size for screens up to 900px width */
-        color: #00ADB5;
-    }
-    nav img {
-        height: 101px; 
-        width: auto; 
-    }
-    .line {
-        width: 30px; 
-    }
-
-    footer.main-content {
-        padding: 10px; 
-    }
-
-    footer.main-content .flex img {
-        height: 26px; 
-        width: 25px;
-        margin: 10px 12px; 
-    }
-
-    main img {
-        width: 233px;
-          margin: -332px -537px;
-    }
-    .font{
-        font-size: 1.5rem;
-    }
-    .purple{
-        font-size: 45px;
-    }
-
-    #photome img {
-        width: 263px;
-        max-width: 400px;
-        margin: 43px;
-        border-radius: 16px;
-    }
-
-    #about h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-top: -44px;
-     
-    }
-
-    #about p {
-        font-size: 18px; 
-      
-    }
-
-    .aboutclass p {
-        margin: 16px; /* Adjust margin for smaller screens */
-    }
-    .particlesjs {
-        width: 100%;
-        height: 50%;
-        background-position: center;
-        background-size: cover;
-  
-    }
-
-    .logos img {
-        width: 112px;
-        height: 39px;
-        margin: -9px 12px;
-    }
-    .leftsection {
-        color: #E1E8ED;
-        font-family: 'Mooli', sans-serif;
-        margin: 163px 35px;
-        background-color: #0E2431;
-    }
-    .main-content #msg {
-        font-size: 28px;
-        color: #00ADB5;
-        font-family: 'Noto Serif', serif;
-    }
-    #pr {
-        text-align: center;
-        color: #00ADB5;
-        margin-top: 22px;
-        font-size: 24px;
-        margin-bottom: 120px;
-    }
-    .loading-message {
-        position: absolute;
-        bottom: 100px; /* Adjust the bottom position to control the spacing */
-        left: 50%;
-        transform: translateX(-50%);
-         color:#00ADB5;
-         font-size:22px;
-    font-family: 'Times New Roman', Times, serif;
-    }
-    .infinite{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        min-height: -22px;
-        background-color: #0E2431;
-        background-size: cover;
-        animation: animatecolor 4s linear infinite;
-        box-sizing: border-box;
-    margin-top: 250px;
-    }
-    .text h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0;
-        margin-left: 110px;
-       
-    }
-    .slide > .text h2 {
-        font-size: 1.8rem;
-        margin-top: -220px;
-        margin-bottom: 0;
-        
-        
-    }
-    .slide > .text p {
-        font-size: 1.3rem;
-        margin-top: 0.3000000000000007rem;
-        margin-left: 100px;
-    }
-    .slide{
-        width:50vw;
-        height:500px;
-        margin: 0 5vw;
-        position: relative;
-        transition:all .7s ease;
-    }
-    .slide > .photo{
-        width:inherit;
-        height: inherit;
-        transition:all 1s ease;
-    }
-    .slide > .photo > img {
-        width:80%;
-        height:120%;
-        margin-left: 20px;
-        object-fit:cover;
-        border-radius: 16px;
-        margin: -169px 32px;
-    }
-    .slide>.text{
-        position:absolute;
-        bottom:4%;
-        right:-50px;
-        color:#fff;
-        transition:all .4s ease;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px){ 
-    /* Adjust styles specifically for iPad Air */
    
     .infinite{
         display:flex;
@@ -1690,11 +1547,11 @@ top: 15px;
         background-size: cover;
         animation: animatecolor 4s linear infinite;
         box-sizing: border-box;
-    margin-top: 700px;
+    margin-top: 200px;
     }
     .loading-message {
         position: absolute;
-        bottom: 300px; /* Adjust the bottom position to control the spacing */
+        bottom: 200px; /* Adjust the bottom position to control the spacing */
         left: 50%;
         transform: translateX(-50%);
          color:#00ADB5;
@@ -1725,31 +1582,31 @@ top: 15px;
     }
 
     main img {
-        width: 541px;
-        margin: -730px -803px;
+        width: 330px;
+        margin: -420px -652px;
     }
     .font{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .purple{
-        font-size: 80px;
+        font-size: 50px;
     }
 
     #photome img {
-        width: 661px;
-        margin: 327px;
+        width: 285px;
+        margin: 15px;
         border-radius: 16px;
     }
 
     #about h2 {
        
-        font-size: 50px; /* Adjust font size for smaller screens */
-        margin-top: 128px; /* Adjust margin-top for smaller screens */
+        font-size: 30px; /* Adjust font size for smaller screens */
+        margin-top: 413px; /* Adjust margin-top for smaller screens */
     }
 
     #about p {
        
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 
     .aboutclass p {
@@ -1757,25 +1614,25 @@ top: 15px;
     }
 
     .logos img {
-        width: 252px;
-        height: 92px;
+        height: 23px;
+    width: 23px;
         margin: -9px 12px;
     }
     .leftsection {
         color: #E1E8ED;
         font-family: 'Mooli', sans-serif;
-        margin: 459px 35px;
+        margin: 6px 35px;
         background-color: #0E2431;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .main-content #msg {
-        font-size: 50px;
+        font-size: 30px;
         color: #00ADB5;
         font-family: 'Noto Serif', serif;
     }
     .secondfoot p {
         color: #E1E8ED;
-        font-size: 30px;
+        font-size: 20px;
     }
     #pr {
         text-align: center;
